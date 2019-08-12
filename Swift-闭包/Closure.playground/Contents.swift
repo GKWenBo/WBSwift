@@ -34,6 +34,7 @@ print(reversedNames)
  */
 
 
+/*
 //尾随闭包
 let digitNames = [
     0: "Zero", 1: "One", 2: "Two",   3: "Three", 4: "Four",
@@ -61,4 +62,18 @@ let strings = numbers.map {
 }
 
 print(strings)
+ */
 
+func makeIncrementer(forIncrement amount: Int) -> () -> Int {
+    var runningTotal = 0
+    func incrementer() -> Int {
+        runningTotal += amount
+        return runningTotal
+    }
+    return incrementer
+}
+
+let incrementByTen = makeIncrementer(forIncrement: 10)
+
+incrementByTen()
+incrementByTen()
