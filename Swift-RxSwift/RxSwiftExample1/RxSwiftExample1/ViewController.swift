@@ -126,7 +126,7 @@ class ViewController: UIViewController {
         }).disposed(by: bag)
     }
     
-    //MARK: 四种Subject的基本用法
+    //MARK: Subject的基本用法
     func example3() {
         //PublishSubject
         let subject = PublishSubject<String>()
@@ -202,6 +202,26 @@ class ViewController: UIViewController {
             })
         
         stringVariable.value = "Episode2"
+    }
+    
+    func example10() {
+        //AsyncSubject
+        /*
+         AsyncSubject 将在源 Observable 产生完成事件后，发出最后一个元素（仅仅只有最后一个元素），如果源 Observable 没有发出任何元素，只有一个完成事件。那 AsyncSubject 也只有一个完成事件。
+         
+
+         */
+        let disposeBag = DisposeBag()
+        let subject = AsyncSubject<String>()
+        
+        subject
+            .subscribe({ print("Subscription: 1 Event:", $0) })
+            .disposed(by: disposeBag)
+        
+        subject.onNext("🐶")
+        subject.onNext("🐱")
+        subject.onNext("🐹")
+        subject.onCompleted()
     }
     
     //MARK: 常用的忽略事件操作符
