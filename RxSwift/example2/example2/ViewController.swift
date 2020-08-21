@@ -50,6 +50,12 @@ class ViewController: UIViewController {
         self.emailTF.layer.borderWidth = 1
         self.passwordTF.layer.borderWidth = 1
         
+        example1()
+        example2()
+        example3()
+    }
+    
+    func example1() {
         let emailObservable = self.emailTF.rx.text.orEmpty.map({ (input: String) -> Bool  in
             return InputValidator.isValidEmail(email: input)
         })
@@ -90,8 +96,52 @@ class ViewController: UIViewController {
             self.registerBtn.isEnabled = isEnabled
         })
         .disposed(by: bag)
+        
+        registerBtn.rx.controlEvent(.touchUpInside).subscribe(onNext: { [unowned self] in
+            let vc = Test1ViewController()
+            self.present(vc, animated: true, completion: nil)
+        }).disposed(by: bag)
     }
-
+    
+    func example2() {
+        let observableInt: Observable<Int> = Observable.create { (observer) -> Disposable in
+            observer.onNext(1)
+            observer.onNext(2)
+            observer.onNext(3)
+            observer.onCompleted()
+            return Disposables.create()
+        }
+        
+        
+        observableInt.subscribe { (number) in
+            print(number)
+        }.disposed(by: bag)
+        
+    }
+    
+    func example3() {
+        typealias JSON = Any
+        
+        let json: Observable<JSON> = Observable.create { (oberver) -> Disposable in
+            
+            let dataTask = URLSession.shared.dataTask(with: URL(string: "www.baidu.com")!) { (data, _, error) in
+                
+                guard error == nil {
+                    oberver.onError(error)
+                    return
+                }
+                
+                if let data = data, let jsonObject = try? JSONSerialization.jsonObject(with: data, options: .mutableContainers) {
+                    
+                }
+                
+            }
+            
+            
+            return Disposables.create()
+        }
+        
+    }
 
 }
 
