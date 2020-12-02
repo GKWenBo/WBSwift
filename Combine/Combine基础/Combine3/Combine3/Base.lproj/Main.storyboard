@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Combine3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="80J-ht-iTw">
+                                <rect key="frame" x="107" y="144" width="200" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="8qL-ml-e0i"/>
+                                    <constraint firstAttribute="width" constant="200" id="Fzd-4U-nwE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="githubIdChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="DxZ-gq-UBq"/>
+                                </connections>
+                            </textField>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="oke-jJ-ZKt">
+                                <rect key="frame" x="197" y="250" width="20" height="20"/>
+                            </activityIndicatorView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uyu-fR-zsx">
+                                <rect key="frame" x="87" y="320" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Dg0-VV-B02"/>
+                                    <constraint firstAttribute="height" constant="128" id="XVX-Dr-T4J"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOt-01-MiT">
+                                <rect key="frame" x="186" y="527" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="80J-ht-iTw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2LN-wd-dPv"/>
+                            <constraint firstItem="oke-jJ-ZKt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2ZI-xf-hNr"/>
+                            <constraint firstItem="80J-ht-iTw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="5i8-36-mCV"/>
+                            <constraint firstItem="Uyu-fR-zsx" firstAttribute="top" secondItem="oke-jJ-ZKt" secondAttribute="bottom" constant="50" id="IbE-3D-Cvl"/>
+                            <constraint firstItem="oke-jJ-ZKt" firstAttribute="top" secondItem="80J-ht-iTw" secondAttribute="bottom" constant="66" id="Oap-RL-xyk"/>
+                            <constraint firstItem="uOt-01-MiT" firstAttribute="top" secondItem="Uyu-fR-zsx" secondAttribute="bottom" constant="79" id="fFs-Vd-JV8"/>
+                            <constraint firstItem="Uyu-fR-zsx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rZI-qP-YTF"/>
+                            <constraint firstItem="uOt-01-MiT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zDd-VS-pBH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="oke-jJ-ZKt" id="xnt-oy-kcO"/>
+                        <outlet property="githubAvatarImageView" destination="Uyu-fR-zsx" id="nkU-7l-Vz5"/>
+                        <outlet property="github_id_entry" destination="80J-ht-iTw" id="Gf7-c9-stQ"/>
+                        <outlet property="repositoryCountLabel" destination="uOt-01-MiT" id="HSq-zD-o04"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="91" y="104"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
