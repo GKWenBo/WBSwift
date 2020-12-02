@@ -74,6 +74,7 @@ let remoteDataPublisher = Just(myURL!)
 enum MyNetworkingError: Error {
     case invalidServerResponse
 }
+
 func adaptiveLoader(requestURL: URL, downLoadURL: URL) -> AnyPublisher<Data, Error> {
     var request = URLRequest(url: requestURL);
     request.allowsCellularAccess = false;
