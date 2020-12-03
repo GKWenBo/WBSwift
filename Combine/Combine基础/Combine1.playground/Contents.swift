@@ -93,5 +93,32 @@ func adaptiveLoader(requestURL: URL, downLoadURL: URL) -> AnyPublisher<Data, Err
             return data
         })
         .eraseToAnyPublisher()
-    
 }
+
+// MARK: - Responding to updates from NotificationCenter
+extension Notification.Name {
+    static let myExampleNotification = Notification.Name("an-example-notification")
+}
+
+let myUserInfo = ["foo" : "bar"]
+let note = Notification(name: .myExampleNotification, userInfo: myUserInfo)
+NotificationCenter.default.post(note)
+
+class MyViewModel {
+    var filterString: String!
+}
+
+let filterField = UITextField()
+let myViewModel = MyViewModel()
+let sub = NotificationCenter.default.publisher(for: UITextField.textDidChangeNotification, object: filterField)
+    .map({ ($0.object as! UITextField).text })
+    .assign(to: \MyViewModel.filterString, on: myViewModel)
+
+/// An example of subscribing to your own notifications
+let cancellable = NotificationCenter.default.publisher(for: .myExampleNotification, object: nil)
+    .sink { (_) in
+        
+    } receiveValue: { (notification) in
+        print("passed through: ", notification)
+    }
+
