@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2F986762579233E00F55E08 /* ObservableObjectPublisherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F986752579233E00F55E08 /* ObservableObjectPublisherTests.swift */; };
+		C2F9867B25792DD700F55E08 /* PublisherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F9867A25792DD700F55E08 /* PublisherTests.swift */; };
 		FD5B9FF62578C36A006D0699 /* FuturePublisherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5B9FF52578C36A006D0699 /* FuturePublisherTests.swift */; };
 		FD5BA01F2578CAF8006D0699 /* EmptyPublisherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BA01E2578CAF8006D0699 /* EmptyPublisherTests.swift */; };
 		FD5BA0242578CD7B006D0699 /* FailedPublisherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5BA0232578CD7B006D0699 /* FailedPublisherTests.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C2F986752579233E00F55E08 /* ObservableObjectPublisherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObjectPublisherTests.swift; sourceTree = "<group>"; };
+		C2F9867A25792DD700F55E08 /* PublisherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublisherTests.swift; sourceTree = "<group>"; };
 		FD5B9FF52578C36A006D0699 /* FuturePublisherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuturePublisherTests.swift; sourceTree = "<group>"; };
 		FD5BA01E2578CAF8006D0699 /* EmptyPublisherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyPublisherTests.swift; sourceTree = "<group>"; };
 		FD5BA0232578CD7B006D0699 /* FailedPublisherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailedPublisherTests.swift; sourceTree = "<group>"; };
@@ -135,6 +139,8 @@
 				FD5BA02D2578D367006D0699 /* RecordTests.swift */,
 				FD5BA0322578D938006D0699 /* DeferredPublisherTests.swift */,
 				FD5BA0372578DDDE006D0699 /* MulticastSharePublisherTests.swift */,
+				C2F986752579233E00F55E08 /* ObservableObjectPublisherTests.swift */,
+				C2F9867A25792DD700F55E08 /* PublisherTests.swift */,
 				FD9552D42578C12C005A688F /* Info.plist */,
 			);
 			path = ReferenceTests;
@@ -291,7 +297,9 @@
 			files = (
 				FD9552D32578C12C005A688F /* ReferenceTests.swift in Sources */,
 				FD5B9FF62578C36A006D0699 /* FuturePublisherTests.swift in Sources */,
+				C2F9867B25792DD700F55E08 /* PublisherTests.swift in Sources */,
 				FD5BA02E2578D367006D0699 /* RecordTests.swift in Sources */,
+				C2F986762579233E00F55E08 /* ObservableObjectPublisherTests.swift in Sources */,
 				FD5BA0382578DDDE006D0699 /* MulticastSharePublisherTests.swift in Sources */,
 				FD5BA0292578CEE3006D0699 /* SequencePublisherTests.swift in Sources */,
 				FD5BA0332578D938006D0699 /* DeferredPublisherTests.swift in Sources */,
