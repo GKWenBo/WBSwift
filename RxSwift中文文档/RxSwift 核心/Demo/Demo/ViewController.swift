@@ -21,7 +21,7 @@ class ViewController: UIViewController {
 
     // MARK: - 如何创建序列
     func create1() {
-        let numbers = Observable<Int>.create { (oberver) -> Disposable in
+        _ = Observable<Int>.create { (oberver) -> Disposable in
             oberver.onNext(1)
             oberver.onCompleted()
             return Disposables.create()
