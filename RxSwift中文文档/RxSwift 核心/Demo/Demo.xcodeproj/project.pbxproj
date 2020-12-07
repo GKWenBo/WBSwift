@@ -20,6 +20,12 @@
 		C26E8C57257CCD59000B9B30 /* DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26E8C56257CCD59000B9B30 /* DemoUITests.swift */; };
 		C26E8C8C257D1703000B9B30 /* SingleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26E8C8B257D1703000B9B30 /* SingleTests.swift */; };
 		C26E8C94257D295A000B9B30 /* CompletableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26E8C93257D295A000B9B30 /* CompletableTests.swift */; };
+		FDDE66C6257DD31B009DA497 /* MaybeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE66C5257DD31B009DA497 /* MaybeTests.swift */; };
+		FDDE66CB257DD5DF009DA497 /* DriverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE66CA257DD5DF009DA497 /* DriverTests.swift */; };
+		FDDE66D0257DDF99009DA497 /* SignalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE66CF257DDF99009DA497 /* SignalTests.swift */; };
+		FDDE66DD257E2761009DA497 /* ControlEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE66DC257E2761009DA497 /* ControlEventTests.swift */; };
+		FDDE66E2257E27DC009DA497 /* ObserverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE66E1257E27DC009DA497 /* ObserverTests.swift */; };
+		FDDE66E7257E2B7B009DA497 /* BinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE66E6257E2B7B009DA497 /* BinderTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +71,12 @@
 		D60F0CB51FF61512F056442C /* Pods-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo.release.xcconfig"; path = "Target Support Files/Pods-Demo/Pods-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		DFAE35D4CD112E390BB09AA4 /* Pods_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3192327A2503A7C5B9B02D5 /* Pods_Demo_DemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo_DemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDDE66C5257DD31B009DA497 /* MaybeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaybeTests.swift; sourceTree = "<group>"; };
+		FDDE66CA257DD5DF009DA497 /* DriverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverTests.swift; sourceTree = "<group>"; };
+		FDDE66CF257DDF99009DA497 /* SignalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignalTests.swift; sourceTree = "<group>"; };
+		FDDE66DC257E2761009DA497 /* ControlEventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlEventTests.swift; sourceTree = "<group>"; };
+		FDDE66E1257E27DC009DA497 /* ObserverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverTests.swift; sourceTree = "<group>"; };
+		FDDE66E6257E2B7B009DA497 /* BinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinderTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +172,12 @@
 				C26E8C4B257CCD59000B9B30 /* DemoTests.swift */,
 				C26E8C8B257D1703000B9B30 /* SingleTests.swift */,
 				C26E8C93257D295A000B9B30 /* CompletableTests.swift */,
+				FDDE66C5257DD31B009DA497 /* MaybeTests.swift */,
+				FDDE66CA257DD5DF009DA497 /* DriverTests.swift */,
+				FDDE66CF257DDF99009DA497 /* SignalTests.swift */,
+				FDDE66DC257E2761009DA497 /* ControlEventTests.swift */,
+				FDDE66E1257E27DC009DA497 /* ObserverTests.swift */,
+				FDDE66E6257E2B7B009DA497 /* BinderTests.swift */,
 				C26E8C4D257CCD59000B9B30 /* Info.plist */,
 			);
 			path = DemoTests;
@@ -422,9 +440,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDDE66C6257DD31B009DA497 /* MaybeTests.swift in Sources */,
+				FDDE66E2257E27DC009DA497 /* ObserverTests.swift in Sources */,
+				FDDE66DD257E2761009DA497 /* ControlEventTests.swift in Sources */,
 				C26E8C8C257D1703000B9B30 /* SingleTests.swift in Sources */,
 				C26E8C4C257CCD59000B9B30 /* DemoTests.swift in Sources */,
+				FDDE66CB257DD5DF009DA497 /* DriverTests.swift in Sources */,
+				FDDE66E7257E2B7B009DA497 /* BinderTests.swift in Sources */,
 				C26E8C94257D295A000B9B30 /* CompletableTests.swift in Sources */,
+				FDDE66D0257DDF99009DA497 /* SignalTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,7 +546,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -577,7 +601,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -633,7 +657,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DemoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -655,7 +679,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = DemoTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
