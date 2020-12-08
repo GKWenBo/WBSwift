@@ -26,6 +26,10 @@
 		FDDE66DD257E2761009DA497 /* ControlEventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE66DC257E2761009DA497 /* ControlEventTests.swift */; };
 		FDDE66E2257E27DC009DA497 /* ObserverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE66E1257E27DC009DA497 /* ObserverTests.swift */; };
 		FDDE66E7257E2B7B009DA497 /* BinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE66E6257E2B7B009DA497 /* BinderTests.swift */; };
+		FDDE66EC257F0DD9009DA497 /* AsyncSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE66EB257F0DD9009DA497 /* AsyncSubject.swift */; };
+		FDDE66F1257F1117009DA497 /* PublishSubjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE66F0257F1117009DA497 /* PublishSubjectTests.swift */; };
+		FDDE66F6257F1411009DA497 /* ReplaySubjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE66F5257F1411009DA497 /* ReplaySubjectTests.swift */; };
+		FDDE66FB257F1863009DA497 /* BehaviorSubjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDDE66FA257F1863009DA497 /* BehaviorSubjectTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +81,10 @@
 		FDDE66DC257E2761009DA497 /* ControlEventTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlEventTests.swift; sourceTree = "<group>"; };
 		FDDE66E1257E27DC009DA497 /* ObserverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObserverTests.swift; sourceTree = "<group>"; };
 		FDDE66E6257E2B7B009DA497 /* BinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinderTests.swift; sourceTree = "<group>"; };
+		FDDE66EB257F0DD9009DA497 /* AsyncSubject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncSubject.swift; sourceTree = "<group>"; };
+		FDDE66F0257F1117009DA497 /* PublishSubjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishSubjectTests.swift; sourceTree = "<group>"; };
+		FDDE66F5257F1411009DA497 /* ReplaySubjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplaySubjectTests.swift; sourceTree = "<group>"; };
+		FDDE66FA257F1863009DA497 /* BehaviorSubjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehaviorSubjectTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +186,10 @@
 				FDDE66DC257E2761009DA497 /* ControlEventTests.swift */,
 				FDDE66E1257E27DC009DA497 /* ObserverTests.swift */,
 				FDDE66E6257E2B7B009DA497 /* BinderTests.swift */,
+				FDDE66EB257F0DD9009DA497 /* AsyncSubject.swift */,
+				FDDE66F0257F1117009DA497 /* PublishSubjectTests.swift */,
+				FDDE66F5257F1411009DA497 /* ReplaySubjectTests.swift */,
+				FDDE66FA257F1863009DA497 /* BehaviorSubjectTests.swift */,
 				C26E8C4D257CCD59000B9B30 /* Info.plist */,
 			);
 			path = DemoTests;
@@ -443,11 +455,15 @@
 				FDDE66C6257DD31B009DA497 /* MaybeTests.swift in Sources */,
 				FDDE66E2257E27DC009DA497 /* ObserverTests.swift in Sources */,
 				FDDE66DD257E2761009DA497 /* ControlEventTests.swift in Sources */,
+				FDDE66F6257F1411009DA497 /* ReplaySubjectTests.swift in Sources */,
 				C26E8C8C257D1703000B9B30 /* SingleTests.swift in Sources */,
 				C26E8C4C257CCD59000B9B30 /* DemoTests.swift in Sources */,
 				FDDE66CB257DD5DF009DA497 /* DriverTests.swift in Sources */,
+				FDDE66F1257F1117009DA497 /* PublishSubjectTests.swift in Sources */,
 				FDDE66E7257E2B7B009DA497 /* BinderTests.swift in Sources */,
+				FDDE66EC257F0DD9009DA497 /* AsyncSubject.swift in Sources */,
 				C26E8C94257D295A000B9B30 /* CompletableTests.swift in Sources */,
+				FDDE66FB257F1863009DA497 /* BehaviorSubjectTests.swift in Sources */,
 				FDDE66D0257DDF99009DA497 /* SignalTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
