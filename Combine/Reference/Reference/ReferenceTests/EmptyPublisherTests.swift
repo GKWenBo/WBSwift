@@ -16,7 +16,7 @@ class EmptyPublisherTests: XCTestCase {
         
         let cancellable = Empty<String, Never>()
         
-        cancellable.sink { (completion) in
+        _ = cancellable.sink { (completion) in
             switch completion {
             case .finished: expectation.fulfill()
             case .failure: XCTFail()

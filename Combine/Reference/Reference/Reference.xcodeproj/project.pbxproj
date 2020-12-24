@@ -24,6 +24,7 @@
 		FD9552C82578C12C005A688F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD9552C62578C12C005A688F /* LaunchScreen.storyboard */; };
 		FD9552D32578C12C005A688F /* ReferenceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9552D22578C12C005A688F /* ReferenceTests.swift */; };
 		FD9552DE2578C12C005A688F /* ReferenceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9552DD2578C12C005A688F /* ReferenceUITests.swift */; };
+		FDC4633F259445F7002A4505 /* NotificationCenterPublisherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6DEEEE25942A07004890DD /* NotificationCenterPublisherTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		FD5BA02D2578D367006D0699 /* RecordTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTests.swift; sourceTree = "<group>"; };
 		FD5BA0322578D938006D0699 /* DeferredPublisherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeferredPublisherTests.swift; sourceTree = "<group>"; };
 		FD5BA0372578DDDE006D0699 /* MulticastSharePublisherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastSharePublisherTests.swift; sourceTree = "<group>"; };
+		FD6DEEEE25942A07004890DD /* NotificationCenterPublisherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterPublisherTests.swift; sourceTree = "<group>"; };
 		FD9552B82578C12A005A688F /* Reference.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reference.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD9552BB2578C12A005A688F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD9552BD2578C12A005A688F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				FD5BA0372578DDDE006D0699 /* MulticastSharePublisherTests.swift */,
 				C2F986752579233E00F55E08 /* ObservableObjectPublisherTests.swift */,
 				C2F9867A25792DD700F55E08 /* PublisherTests.swift */,
+				FD6DEEEE25942A07004890DD /* NotificationCenterPublisherTests.swift */,
 				FD9552D42578C12C005A688F /* Info.plist */,
 			);
 			path = ReferenceTests;
@@ -305,6 +308,7 @@
 				FD5BA0332578D938006D0699 /* DeferredPublisherTests.swift in Sources */,
 				FD5BA01F2578CAF8006D0699 /* EmptyPublisherTests.swift in Sources */,
 				FD5BA0242578CD7B006D0699 /* FailedPublisherTests.swift in Sources */,
+				FDC4633F259445F7002A4505 /* NotificationCenterPublisherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
