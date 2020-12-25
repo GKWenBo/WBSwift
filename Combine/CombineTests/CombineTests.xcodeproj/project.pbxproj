@@ -21,6 +21,14 @@
 		FDC463C9259474D6002A4505 /* DataTaskPublisherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC463C8259474D6002A4505 /* DataTaskPublisherTests.swift */; };
 		FDC463CF25947FE2002A4505 /* SwitchAndFlatMapPublisherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC463CE25947FE2002A4505 /* SwitchAndFlatMapPublisherTests.swift */; };
 		FDC463D525948AA2002A4505 /* FailedPublisherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC463D425948AA2002A4505 /* FailedPublisherTests.swift */; };
+		FDC463DB25957627002A4505 /* FilteringOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC463DA25957627002A4505 /* FilteringOperatorTests.swift */; };
+		FDC463E125957D97002A4505 /* FilterPublisherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC463E025957D97002A4505 /* FilterPublisherTests.swift */; };
+		FDC463E725958109002A4505 /* DebounceAndRemoveDuplicatesPublisherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC463E625958109002A4505 /* DebounceAndRemoveDuplicatesPublisherTests.swift */; };
+		FDC463ED25958392002A4505 /* ChangingErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC463EC25958392002A4505 /* ChangingErrorTests.swift */; };
+		FDC463F325958B86002A4505 /* ReducingOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC463F225958B86002A4505 /* ReducingOperatorTests.swift */; };
+		FDC464222595B5FE002A4505 /* MathOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC464212595B5FE002A4505 /* MathOperatorTests.swift */; };
+		FDC464282595BE78002A4505 /* CriteriaOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC464272595BE78002A4505 /* CriteriaOperatorTests.swift */; };
+		FDC4642E2595CE89002A4505 /* SequentialOperatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC4642D2595CE89002A4505 /* SequentialOperatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +69,14 @@
 		FDC463C8259474D6002A4505 /* DataTaskPublisherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTaskPublisherTests.swift; sourceTree = "<group>"; };
 		FDC463CE25947FE2002A4505 /* SwitchAndFlatMapPublisherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchAndFlatMapPublisherTests.swift; sourceTree = "<group>"; };
 		FDC463D425948AA2002A4505 /* FailedPublisherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailedPublisherTests.swift; sourceTree = "<group>"; };
+		FDC463DA25957627002A4505 /* FilteringOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilteringOperatorTests.swift; sourceTree = "<group>"; };
+		FDC463E025957D97002A4505 /* FilterPublisherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPublisherTests.swift; sourceTree = "<group>"; };
+		FDC463E625958109002A4505 /* DebounceAndRemoveDuplicatesPublisherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebounceAndRemoveDuplicatesPublisherTests.swift; sourceTree = "<group>"; };
+		FDC463EC25958392002A4505 /* ChangingErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangingErrorTests.swift; sourceTree = "<group>"; };
+		FDC463F225958B86002A4505 /* ReducingOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReducingOperatorTests.swift; sourceTree = "<group>"; };
+		FDC464212595B5FE002A4505 /* MathOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathOperatorTests.swift; sourceTree = "<group>"; };
+		FDC464272595BE78002A4505 /* CriteriaOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CriteriaOperatorTests.swift; sourceTree = "<group>"; };
+		FDC4642D2595CE89002A4505 /* SequentialOperatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SequentialOperatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +171,14 @@
 				FDC463C8259474D6002A4505 /* DataTaskPublisherTests.swift */,
 				FDC463CE25947FE2002A4505 /* SwitchAndFlatMapPublisherTests.swift */,
 				FDC463D425948AA2002A4505 /* FailedPublisherTests.swift */,
+				FDC463DA25957627002A4505 /* FilteringOperatorTests.swift */,
+				FDC463E025957D97002A4505 /* FilterPublisherTests.swift */,
+				FDC463E625958109002A4505 /* DebounceAndRemoveDuplicatesPublisherTests.swift */,
+				FDC463EC25958392002A4505 /* ChangingErrorTests.swift */,
+				FDC463F225958B86002A4505 /* ReducingOperatorTests.swift */,
+				FDC464212595B5FE002A4505 /* MathOperatorTests.swift */,
+				FDC464272595BE78002A4505 /* CriteriaOperatorTests.swift */,
+				FDC4642D2595CE89002A4505 /* SequentialOperatorTests.swift */,
 				FDC4636925944990002A4505 /* Info.plist */,
 			);
 			path = "Tests iOS";
@@ -346,11 +370,19 @@
 			files = (
 				FDC463D525948AA2002A4505 /* FailedPublisherTests.swift in Sources */,
 				FDC463CF25947FE2002A4505 /* SwitchAndFlatMapPublisherTests.swift in Sources */,
+				FDC463DB25957627002A4505 /* FilteringOperatorTests.swift in Sources */,
 				FDC4639425944C5E002A4505 /* TimerPublisherTests.swift in Sources */,
 				FDC463C9259474D6002A4505 /* DataTaskPublisherTests.swift in Sources */,
 				FDC4639A25946015002A4505 /* ScanPublisherTests.swift in Sources */,
+				FDC463F325958B86002A4505 /* ReducingOperatorTests.swift in Sources */,
 				FDC4638E259449D2002A4505 /* NotificationCenterPublisherTests.swift in Sources */,
+				FDC463ED25958392002A4505 /* ChangingErrorTests.swift in Sources */,
+				FDC463E125957D97002A4505 /* FilterPublisherTests.swift in Sources */,
+				FDC4642E2595CE89002A4505 /* SequentialOperatorTests.swift in Sources */,
+				FDC464282595BE78002A4505 /* CriteriaOperatorTests.swift in Sources */,
 				FDC4636825944990002A4505 /* Tests_iOS.swift in Sources */,
+				FDC463E725958109002A4505 /* DebounceAndRemoveDuplicatesPublisherTests.swift in Sources */,
+				FDC464222595B5FE002A4505 /* MathOperatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
