@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FDBFF90C259977AF00417CD5 /* MergingPipelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBFF90B259977AF00417CD5 /* MergingPipelineTests.swift */; };
+		FDBFF91225997ADA00417CD5 /* RetryPublisherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBFF91125997ADA00417CD5 /* RetryPublisherTests.swift */; };
 		FDC4636825944990002A4505 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC4636725944990002A4505 /* Tests_iOS.swift */; };
 		FDC4637325944990002A4505 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC4637225944990002A4505 /* Tests_macOS.swift */; };
 		FDC4637525944990002A4505 /* CombineTestsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC4634C2594498E002A4505 /* CombineTestsApp.swift */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FDBFF90B259977AF00417CD5 /* MergingPipelineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergingPipelineTests.swift; sourceTree = "<group>"; };
+		FDBFF91125997ADA00417CD5 /* RetryPublisherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryPublisherTests.swift; sourceTree = "<group>"; };
 		FDC4634C2594498E002A4505 /* CombineTestsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineTestsApp.swift; sourceTree = "<group>"; };
 		FDC4634D2594498E002A4505 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FDC4634E25944990002A4505 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -179,6 +183,8 @@
 				FDC464212595B5FE002A4505 /* MathOperatorTests.swift */,
 				FDC464272595BE78002A4505 /* CriteriaOperatorTests.swift */,
 				FDC4642D2595CE89002A4505 /* SequentialOperatorTests.swift */,
+				FDBFF90B259977AF00417CD5 /* MergingPipelineTests.swift */,
+				FDBFF91125997ADA00417CD5 /* RetryPublisherTests.swift */,
 				FDC4636925944990002A4505 /* Info.plist */,
 			);
 			path = "Tests iOS";
@@ -370,11 +376,13 @@
 			files = (
 				FDC463D525948AA2002A4505 /* FailedPublisherTests.swift in Sources */,
 				FDC463CF25947FE2002A4505 /* SwitchAndFlatMapPublisherTests.swift in Sources */,
+				FDBFF91225997ADA00417CD5 /* RetryPublisherTests.swift in Sources */,
 				FDC463DB25957627002A4505 /* FilteringOperatorTests.swift in Sources */,
 				FDC4639425944C5E002A4505 /* TimerPublisherTests.swift in Sources */,
 				FDC463C9259474D6002A4505 /* DataTaskPublisherTests.swift in Sources */,
 				FDC4639A25946015002A4505 /* ScanPublisherTests.swift in Sources */,
 				FDC463F325958B86002A4505 /* ReducingOperatorTests.swift in Sources */,
+				FDBFF90C259977AF00417CD5 /* MergingPipelineTests.swift in Sources */,
 				FDC4638E259449D2002A4505 /* NotificationCenterPublisherTests.swift in Sources */,
 				FDC463ED25958392002A4505 /* ChangingErrorTests.swift in Sources */,
 				FDC463E125957D97002A4505 /* FilterPublisherTests.swift in Sources */,
