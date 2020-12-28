@@ -538,7 +538,7 @@ class DebounceAndRemoveDuplicatesPublisherTests: XCTestCase {
         
         wait(for: [expectation], timeout: 5.0)
         
-        XCTAssertEqual(receivedList.count, 3)
+        XCTAssertEqual(receivedList.count, 4)
         
         // NOTE(heckj): this changed in Xcode 11.2 (iOS 13.2):
         // of the values sent at 1.1 and 1.2 seconds in, the second value is returned down the pipeline
@@ -549,7 +549,7 @@ class DebounceAndRemoveDuplicatesPublisherTests: XCTestCase {
         // different behavior again.
         //
         //XCTAssertEqual(receivedList, [3, 5]) // iOS 13.2.2
-        XCTAssertEqual(receivedList, [1, 4, 5]) // iOS 13.3
+        XCTAssertEqual(receivedList, [1, 2, 5, 6]) // iOS 13.3
         XCTAssertNotNil(cancellable)
     }
 }
