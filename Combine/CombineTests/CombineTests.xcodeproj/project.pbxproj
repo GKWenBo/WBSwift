@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD19EAE7259C504400E6299B /* MeasureIntervalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD19EAE6259C504400E6299B /* MeasureIntervalTests.swift */; };
+		FD19EAED259C53C600E6299B /* EncodeDecodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD19EAEC259C53C600E6299B /* EncodeDecodeTests.swift */; };
 		FDBFF90C259977AF00417CD5 /* MergingPipelineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBFF90B259977AF00417CD5 /* MergingPipelineTests.swift */; };
 		FDBFF91225997ADA00417CD5 /* RetryPublisherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBFF91125997ADA00417CD5 /* RetryPublisherTests.swift */; };
 		FDC4636825944990002A4505 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC4636725944990002A4505 /* Tests_iOS.swift */; };
@@ -51,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FD19EAE6259C504400E6299B /* MeasureIntervalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasureIntervalTests.swift; sourceTree = "<group>"; };
+		FD19EAEC259C53C600E6299B /* EncodeDecodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodeDecodeTests.swift; sourceTree = "<group>"; };
 		FDBFF90B259977AF00417CD5 /* MergingPipelineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergingPipelineTests.swift; sourceTree = "<group>"; };
 		FDBFF91125997ADA00417CD5 /* RetryPublisherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetryPublisherTests.swift; sourceTree = "<group>"; };
 		FDC4634C2594498E002A4505 /* CombineTestsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineTestsApp.swift; sourceTree = "<group>"; };
@@ -185,6 +189,8 @@
 				FDC4642D2595CE89002A4505 /* SequentialOperatorTests.swift */,
 				FDBFF90B259977AF00417CD5 /* MergingPipelineTests.swift */,
 				FDBFF91125997ADA00417CD5 /* RetryPublisherTests.swift */,
+				FD19EAE6259C504400E6299B /* MeasureIntervalTests.swift */,
+				FD19EAEC259C53C600E6299B /* EncodeDecodeTests.swift */,
 				FDC4636925944990002A4505 /* Info.plist */,
 			);
 			path = "Tests iOS";
@@ -375,6 +381,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDC463D525948AA2002A4505 /* FailedPublisherTests.swift in Sources */,
+				FD19EAE7259C504400E6299B /* MeasureIntervalTests.swift in Sources */,
 				FDC463CF25947FE2002A4505 /* SwitchAndFlatMapPublisherTests.swift in Sources */,
 				FDBFF91225997ADA00417CD5 /* RetryPublisherTests.swift in Sources */,
 				FDC463DB25957627002A4505 /* FilteringOperatorTests.swift in Sources */,
@@ -388,6 +395,7 @@
 				FDC463E125957D97002A4505 /* FilterPublisherTests.swift in Sources */,
 				FDC4642E2595CE89002A4505 /* SequentialOperatorTests.swift in Sources */,
 				FDC464282595BE78002A4505 /* CriteriaOperatorTests.swift in Sources */,
+				FD19EAED259C53C600E6299B /* EncodeDecodeTests.swift in Sources */,
 				FDC4636825944990002A4505 /* Tests_iOS.swift in Sources */,
 				FDC463E725958109002A4505 /* DebounceAndRemoveDuplicatesPublisherTests.swift in Sources */,
 				FDC464222595B5FE002A4505 /* MathOperatorTests.swift in Sources */,
