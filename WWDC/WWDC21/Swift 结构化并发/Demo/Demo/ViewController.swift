@@ -192,14 +192,6 @@ class ViewController: UIViewController {
 //    }
     
     
-    func work(_ value: Int) async -> Int {
-        // 3
-        print("Start work \(value)")
-        await Task.sleep(UInt64(value) * NSEC_PER_SEC)
-        print("Work \(value) done")
-        return value
-    }
-    
     // MARK: - 结构化并发的组合
     /*
      在只使用一次 withTaskGroup 或者一组 async let 的单一层级的维度上，我们可能很难看出结构化并发的优势，因为这时对于任务的调度还处于可控状态：我们完全可以使用传统的技术，通过添加一些信号量，来“手动”控制保证并发任务最终可以合并到一起。但是，随着系统逐渐复杂，可能会面临在一些并发的子任务中再次进行任务并发的需求。也就是，形成多个层级的子任务系统。在这种情况下，想依靠原始的信号量来进行任务管理会变得异常复杂。这也是结构化并发这一抽象真正能发挥全部功效的情况。
@@ -241,16 +233,16 @@ class ViewController: UIViewController {
     /*
      相对于 withTaskGroup 的嵌套，使用 async let 会更有技巧性一些。async let 赋值等号右边，接受的是一个对异步函数的调用。这个异步函数可以是像 work 这样的具体具名的函数，也可以是一个匿名函数。比如，上面的 withTaskGroup 嵌套的例子，使用 async let，可以简单地写为：
      */
-    func start() async {
-        async let v02: Int = {
-            async let v0 = work(0)
-            async let v2 = work(2)
-            return await v0 + v2
-        }()
-        
-        async let v1 = work(1)
-        _ = await v02 + v1
-    }
+//    func start() async {
+//        async let v02: Int = {
+//            async let v0 = work(0)
+//            async let v2 = work(2)
+//            return await v0 + v2
+//        }()
+//
+//        async let v1 = work(1)
+//        _ = await v02 + v1
+//    }
     /*
      这里在 v02 等号右侧的是一个匿名的异步函数闭包调用，其中通过两个新的 async let 开始了嵌套的子任务。特别注意，上例中的写法和下面这样的 await 有本质不同：
      func start() async {
@@ -262,5 +254,92 @@ class ViewController: UIViewController {
      }
      await work(0) + work(2) 将会顺次执行 work(0) 和 work(2)，并把它们的结果相加。这时两个操作不是并发执行的，也不涉及新的子任务。
      */
+    
+    /*
+     TaskGroup.addTask 和 async let 是 Swift 并发中“唯二”的创建结构化并发任务的 API。它们从当前的任务运行环境中继承任务优先级等属性，为即将开始的异步操作创建新的任务环境，然后将新的任务作为子任务添加到当前任务环境中。
+     */
+    
+    
+    // MARK: - 非结构化任务
+    /*
+     TaskGroup.addTask 和 async let 是 Swift 并发中“唯二”的创建结构化并发任务的 API。它们从当前的任务运行环境中继承任务优先级等属性，为即将开始的异步操作创建新的任务环境，然后将新的任务作为子任务添加到当前任务环境中。
+     
+     这类任务具有最高的灵活性，它们可以在任何地方被创建。它们生成一棵新的任务树，并位于顶层，不属于任何其他任务的子任务，生命周期不和其他作用域绑定，当然也没有结构化并发的特性。对比三者，可以看出它们之间明显的不同：
+
+     TaskGroup.addTask 和 async let - 创建结构化的子任务，继承优先级和本地值。
+     Task.init - 创建非结构化的任务根节点，从当前任务中继承运行环境：比如 actor 隔离域，优先级和本地值等。
+     Task.detached - 创建非结构化的任务根节点，不从当前任务中继承优先级和本地值等运行环境，完全新的游离任务环境。
+     有一种迷思认为，我们在新建根节点任务时，应该尽量使用 Task.init 而避免选用生成一个完全“游离任务”的 Task.detached。其实这并不全然正确，有时候我们希望从当前任务环境中继承一些事实，但也有时候我们确实想要一个“干净”的任务环境。比如 @main 标记的异步程序入口和 SwiftUI task 修饰符，都使用的是 Task.detached。具体是不是有可能从当前任务环境中继承属性，或者应不应该继承这些属性，需要具体问题具体分析。
+
+     创建非结构化任务时，我们可以得到一个具体的 Task 值，它充当了这个新建任务的标识。从 Task.init 或 Task.detached 的闭包中返回的值，将作为整个 Task 运行结束后的值。使用 Task.value 这个异步只读属性，我们可以获取到整个 Task 的返回值：
+     */
+//    func start() async {
+//        Task {
+//            await work(1)
+//        }
+//
+//        Task {
+//            await work(2)
+//        }
+//
+//        print("End")
+//    }
+    
+//    func start() async {
+//        let t1 = Task {
+//            await work(1)
+//        }
+//
+//        let t2 = Task {
+//            await work(2)
+//        }
+//
+//        let v1 = await t1.value
+//        let v2 = await t2.value
+//
+//        print("End")
+//    }
+    
+    /*
+     用 Task.init 或 Task.detached 明确创建的 Task，是没有结构化并发特性的。Task 值超过作用域并不会导致自动取消或是 await 行为。想要取消一个这样的 Task，必须持有返回的 Task 值并明确调用 cancel：
+     */
+//    func start() async {
+//        let t1 = Task {
+//            await work(1)
+//        }
+//
+//        let t2 = Task {
+//            await work(2)
+//        }
+//
+//        t1.cancel()
+//
+//        print("End")
+//    }
+    
+    /*
+     这种非结构化并发中，外层的 Task 的取消，并不会传递到内层 Task。或者，更准确来说，这样的两个 Task 并没有任何从属关系，它们都是顶层任务：
+     */
+    func start() async {
+        let outer = Task {
+            let inner = Task {
+                await work(1)
+            }
+            
+            await work(2)
+        }
+        
+//        outer.isCancelled // true
+//        inner.isCancelled // false
+    }
+    
+    // MARK: - Work
+    func work(_ value: Int) async -> Int {
+        // 3
+        print("Start work \(value)")
+        await Task.sleep(UInt64(value) * NSEC_PER_SEC)
+        print("Work \(value) done")
+        return value
+    }
 }
 
