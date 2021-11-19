@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CC4A3A427474DDD00A0FC8F /* AdaptiveSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4A3A327474DDD00A0FC8F /* AdaptiveSwift.swift */; };
+		0CC4A3A82747510600A0FC8F /* AdaptiveOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4A3A72747510600A0FC8F /* AdaptiveOC.m */; };
 		C27590B92746959000CC148A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27590B82746959000CC148A /* AppDelegate.swift */; };
 		C27590BB2746959000CC148A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27590BA2746959000CC148A /* SceneDelegate.swift */; };
 		C27590BD2746959000CC148A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27590BC2746959000CC148A /* ViewController.swift */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CC4A3A327474DDD00A0FC8F /* AdaptiveSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveSwift.swift; sourceTree = "<group>"; };
+		0CC4A3A52747510600A0FC8F /* NewFeatureXcode-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NewFeatureXcode-Bridging-Header.h"; sourceTree = "<group>"; };
+		0CC4A3A62747510600A0FC8F /* AdaptiveOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdaptiveOC.h; sourceTree = "<group>"; };
+		0CC4A3A72747510600A0FC8F /* AdaptiveOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdaptiveOC.m; sourceTree = "<group>"; };
 		C27590B52746959000CC148A /* NewFeatureXcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewFeatureXcode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C27590B82746959000CC148A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C27590BA2746959000CC148A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,10 +111,14 @@
 				C27590BA2746959000CC148A /* SceneDelegate.swift */,
 				C27590BC2746959000CC148A /* ViewController.swift */,
 				C27590E8274695D000CC148A /* SwiftUIView.swift */,
+				0CC4A3A327474DDD00A0FC8F /* AdaptiveSwift.swift */,
+				0CC4A3A62747510600A0FC8F /* AdaptiveOC.h */,
+				0CC4A3A72747510600A0FC8F /* AdaptiveOC.m */,
 				C27590BE2746959000CC148A /* Main.storyboard */,
 				C27590C12746959200CC148A /* Assets.xcassets */,
 				C27590C32746959200CC148A /* LaunchScreen.storyboard */,
 				C27590C62746959300CC148A /* Info.plist */,
+				0CC4A3A52747510600A0FC8F /* NewFeatureXcode-Bridging-Header.h */,
 			);
 			path = NewFeatureXcode;
 			sourceTree = "<group>";
@@ -198,6 +208,7 @@
 				TargetAttributes = {
 					C27590B42746959000CC148A = {
 						CreatedOnToolsVersion = 13.1;
+						LastSwiftMigration = 1310;
 					};
 					C27590CA2746959300CC148A = {
 						CreatedOnToolsVersion = 13.1;
@@ -263,6 +274,8 @@
 			files = (
 				C27590BD2746959000CC148A /* ViewController.swift in Sources */,
 				C27590B92746959000CC148A /* AppDelegate.swift in Sources */,
+				0CC4A3A427474DDD00A0FC8F /* AdaptiveSwift.swift in Sources */,
+				0CC4A3A82747510600A0FC8F /* AdaptiveOC.m in Sources */,
 				C27590E9274695D000CC148A /* SwiftUIView.swift in Sources */,
 				C27590BB2746959000CC148A /* SceneDelegate.swift in Sources */,
 			);
@@ -441,6 +454,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -458,6 +472,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = wenbo.NewFeatureXcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "NewFeatureXcode/NewFeatureXcode-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -468,6 +484,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -485,6 +502,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = wenbo.NewFeatureXcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "NewFeatureXcode/NewFeatureXcode-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
