@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2161F9F2748EE8F0017850C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2161F9E2748EE8F0017850C /* AppDelegate.swift */; };
+		C2161FA12748EE8F0017850C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2161FA02748EE8F0017850C /* SceneDelegate.swift */; };
+		C2161FA62748EE8F0017850C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2161FA42748EE8F0017850C /* Main.storyboard */; };
+		C2161FA82748EE9C0017850C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2161FA72748EE9C0017850C /* Assets.xcassets */; };
+		C2161FAB2748EE9C0017850C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2161FA92748EE9C0017850C /* LaunchScreen.storyboard */; };
+		C2161FB62748EE9C0017850C /* async______Closure______Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2161FB52748EE9C0017850C /* async______Closure______Tests.swift */; };
+		C2161FC02748EE9D0017850C /* async______Closure______UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2161FBF2748EE9D0017850C /* async______Closure______UITests.swift */; };
+		C2161FC22748EE9D0017850C /* async______Closure______UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2161FC12748EE9D0017850C /* async______Closure______UITestsLaunchTests.swift */; };
+		C2161FCE2748F1080017850C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2161FA22748EE8F0017850C /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C2161FB22748EE9C0017850C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2161F932748EE8F0017850C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2161F9A2748EE8F0017850C;
+			remoteInfo = "async 关键字对 Closure 用法的影响";
+		};
+		C2161FBC2748EE9D0017850C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C2161F932748EE8F0017850C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2161F9A2748EE8F0017850C;
+			remoteInfo = "async 关键字对 Closure 用法的影响";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C2161F9B2748EE8F0017850C /* async 关键字对 Closure 用法的影响.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "async 关键字对 Closure 用法的影响.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2161F9E2748EE8F0017850C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C2161FA02748EE8F0017850C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C2161FA22748EE8F0017850C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; wrapsLines = 0; };
+		C2161FA52748EE8F0017850C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C2161FA72748EE9C0017850C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2161FAA2748EE9C0017850C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C2161FAC2748EE9C0017850C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2161FB12748EE9C0017850C /* async 关键字对 Closure 用法的影响Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "async 关键字对 Closure 用法的影响Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2161FB52748EE9C0017850C /* async______Closure______Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "async______Closure______Tests.swift"; sourceTree = "<group>"; };
+		C2161FBB2748EE9D0017850C /* async 关键字对 Closure 用法的影响UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "async 关键字对 Closure 用法的影响UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2161FBF2748EE9D0017850C /* async______Closure______UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "async______Closure______UITests.swift"; sourceTree = "<group>"; };
+		C2161FC12748EE9D0017850C /* async______Closure______UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "async______Closure______UITestsLaunchTests.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2161F982748EE8F0017850C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2161FAE2748EE9C0017850C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2161FB82748EE9D0017850C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2161F922748EE8F0017850C = {
+			isa = PBXGroup;
+			children = (
+				C2161F9D2748EE8F0017850C /* async 关键字对 Closure 用法的影响 */,
+				C2161FB42748EE9C0017850C /* async 关键字对 Closure 用法的影响Tests */,
+				C2161FBE2748EE9D0017850C /* async 关键字对 Closure 用法的影响UITests */,
+				C2161F9C2748EE8F0017850C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2161F9C2748EE8F0017850C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2161F9B2748EE8F0017850C /* async 关键字对 Closure 用法的影响.app */,
+				C2161FB12748EE9C0017850C /* async 关键字对 Closure 用法的影响Tests.xctest */,
+				C2161FBB2748EE9D0017850C /* async 关键字对 Closure 用法的影响UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2161F9D2748EE8F0017850C /* async 关键字对 Closure 用法的影响 */ = {
+			isa = PBXGroup;
+			children = (
+				C2161F9E2748EE8F0017850C /* AppDelegate.swift */,
+				C2161FA02748EE8F0017850C /* SceneDelegate.swift */,
+				C2161FA22748EE8F0017850C /* ViewController.swift */,
+				C2161FA42748EE8F0017850C /* Main.storyboard */,
+				C2161FA72748EE9C0017850C /* Assets.xcassets */,
+				C2161FA92748EE9C0017850C /* LaunchScreen.storyboard */,
+				C2161FAC2748EE9C0017850C /* Info.plist */,
+			);
+			path = "async 关键字对 Closure 用法的影响";
+			sourceTree = "<group>";
+		};
+		C2161FB42748EE9C0017850C /* async 关键字对 Closure 用法的影响Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C2161FB52748EE9C0017850C /* async______Closure______Tests.swift */,
+			);
+			path = "async 关键字对 Closure 用法的影响Tests";
+			sourceTree = "<group>";
+		};
+		C2161FBE2748EE9D0017850C /* async 关键字对 Closure 用法的影响UITests */ = {
+			isa = PBXGroup;
+			children = (
+				C2161FBF2748EE9D0017850C /* async______Closure______UITests.swift */,
+				C2161FC12748EE9D0017850C /* async______Closure______UITestsLaunchTests.swift */,
+			);
+			path = "async 关键字对 Closure 用法的影响UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2161F9A2748EE8F0017850C /* async 关键字对 Closure 用法的影响 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2161FC52748EE9D0017850C /* Build configuration list for PBXNativeTarget "async 关键字对 Closure 用法的影响" */;
+			buildPhases = (
+				C2161F972748EE8F0017850C /* Sources */,
+				C2161F982748EE8F0017850C /* Frameworks */,
+				C2161F992748EE8F0017850C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "async 关键字对 Closure 用法的影响";
+			productName = "async 关键字对 Closure 用法的影响";
+			productReference = C2161F9B2748EE8F0017850C /* async 关键字对 Closure 用法的影响.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C2161FB02748EE9C0017850C /* async 关键字对 Closure 用法的影响Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2161FC82748EE9D0017850C /* Build configuration list for PBXNativeTarget "async 关键字对 Closure 用法的影响Tests" */;
+			buildPhases = (
+				C2161FAD2748EE9C0017850C /* Sources */,
+				C2161FAE2748EE9C0017850C /* Frameworks */,
+				C2161FAF2748EE9C0017850C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2161FB32748EE9C0017850C /* PBXTargetDependency */,
+			);
+			name = "async 关键字对 Closure 用法的影响Tests";
+			productName = "async 关键字对 Closure 用法的影响Tests";
+			productReference = C2161FB12748EE9C0017850C /* async 关键字对 Closure 用法的影响Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C2161FBA2748EE9D0017850C /* async 关键字对 Closure 用法的影响UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2161FCB2748EE9D0017850C /* Build configuration list for PBXNativeTarget "async 关键字对 Closure 用法的影响UITests" */;
+			buildPhases = (
+				C2161FB72748EE9D0017850C /* Sources */,
+				C2161FB82748EE9D0017850C /* Frameworks */,
+				C2161FB92748EE9D0017850C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C2161FBD2748EE9D0017850C /* PBXTargetDependency */,
+			);
+			name = "async 关键字对 Closure 用法的影响UITests";
+			productName = "async 关键字对 Closure 用法的影响UITests";
+			productReference = C2161FBB2748EE9D0017850C /* async 关键字对 Closure 用法的影响UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2161F932748EE8F0017850C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					C2161F9A2748EE8F0017850C = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					C2161FB02748EE9C0017850C = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = C2161F9A2748EE8F0017850C;
+					};
+					C2161FBA2748EE9D0017850C = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = C2161F9A2748EE8F0017850C;
+					};
+				};
+			};
+			buildConfigurationList = C2161F962748EE8F0017850C /* Build configuration list for PBXProject "async 关键字对 Closure 用法的影响" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C2161F922748EE8F0017850C;
+			productRefGroup = C2161F9C2748EE8F0017850C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2161F9A2748EE8F0017850C /* async 关键字对 Closure 用法的影响 */,
+				C2161FB02748EE9C0017850C /* async 关键字对 Closure 用法的影响Tests */,
+				C2161FBA2748EE9D0017850C /* async 关键字对 Closure 用法的影响UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C2161F992748EE8F0017850C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2161FAB2748EE9C0017850C /* LaunchScreen.storyboard in Resources */,
+				C2161FA82748EE9C0017850C /* Assets.xcassets in Resources */,
+				C2161FA62748EE8F0017850C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2161FAF2748EE9C0017850C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2161FB92748EE9D0017850C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2161F972748EE8F0017850C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2161FCE2748F1080017850C /* ViewController.swift in Sources */,
+				C2161F9F2748EE8F0017850C /* AppDelegate.swift in Sources */,
+				C2161FA12748EE8F0017850C /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2161FAD2748EE9C0017850C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2161FB62748EE9C0017850C /* async______Closure______Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2161FB72748EE9D0017850C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2161FC02748EE9D0017850C /* async______Closure______UITests.swift in Sources */,
+				C2161FC22748EE9D0017850C /* async______Closure______UITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2161FB32748EE9C0017850C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2161F9A2748EE8F0017850C /* async 关键字对 Closure 用法的影响 */;
+			targetProxy = C2161FB22748EE9C0017850C /* PBXContainerItemProxy */;
+		};
+		C2161FBD2748EE9D0017850C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2161F9A2748EE8F0017850C /* async 关键字对 Closure 用法的影响 */;
+			targetProxy = C2161FBC2748EE9D0017850C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C2161FA42748EE8F0017850C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2161FA52748EE8F0017850C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C2161FA92748EE9C0017850C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2161FAA2748EE9C0017850C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C2161FC32748EE9D0017850C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C2161FC42748EE9D0017850C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C2161FC62748EE9D0017850C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "async 关键字对 Closure 用法的影响/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wenbo.async------Closure------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C2161FC72748EE9D0017850C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "async 关键字对 Closure 用法的影响/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wenbo.async------Closure------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C2161FC92748EE9D0017850C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wenbo.async------Closure------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/async 关键字对 Closure 用法的影响.app/async 关键字对 Closure 用法的影响";
+			};
+			name = Debug;
+		};
+		C2161FCA2748EE9D0017850C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wenbo.async------Closure------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/async 关键字对 Closure 用法的影响.app/async 关键字对 Closure 用法的影响";
+			};
+			name = Release;
+		};
+		C2161FCC2748EE9D0017850C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wenbo.async------Closure------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "async 关键字对 Closure 用法的影响";
+			};
+			name = Debug;
+		};
+		C2161FCD2748EE9D0017850C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wenbo.async------Closure------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "async 关键字对 Closure 用法的影响";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2161F962748EE8F0017850C /* Build configuration list for PBXProject "async 关键字对 Closure 用法的影响" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2161FC32748EE9D0017850C /* Debug */,
+				C2161FC42748EE9D0017850C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2161FC52748EE9D0017850C /* Build configuration list for PBXNativeTarget "async 关键字对 Closure 用法的影响" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2161FC62748EE9D0017850C /* Debug */,
+				C2161FC72748EE9D0017850C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2161FC82748EE9D0017850C /* Build configuration list for PBXNativeTarget "async 关键字对 Closure 用法的影响Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2161FC92748EE9D0017850C /* Debug */,
+				C2161FCA2748EE9D0017850C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2161FCB2748EE9D0017850C /* Build configuration list for PBXNativeTarget "async 关键字对 Closure 用法的影响UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2161FCC2748EE9D0017850C /* Debug */,
+				C2161FCD2748EE9D0017850C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2161F932748EE8F0017850C /* Project object */;
+}

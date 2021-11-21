@@ -8,8 +8,8 @@
 import Foundation
 import UIKit
 
-
-
+// MARK: - canImport && os
+// 是否能引人某框架 && 系统是
 #if canImport(Combine) && os(iOS) && !os(watchOS)
 import Combine
 
@@ -24,6 +24,7 @@ class AdaptiveSwift {
     
     init() {
         
+        // MARK: - #available
         /// available
         if #available(iOS 15.0, *) {
             
@@ -31,6 +32,7 @@ class AdaptiveSwift {
             
         }
         
+        // MAKR: - NSObject responds
         // NSObject responds
         let tableView = UITableView()
         if tableView.responds(to: #selector(getter: UITableView.contentInsetAdjustmentBehavior)) {
@@ -38,6 +40,7 @@ class AdaptiveSwift {
         }
         
         
+        // MARK: - 根据系统版本
         // 根据系统版本
         if Float(UIDevice.current.systemVersion)! > 11.0 {
             
@@ -49,6 +52,7 @@ class AdaptiveSwift {
         
         #endif
         
+        // MARK: - 运行环境
         /// 判断模拟器还是真机
         #if targetEnvironment(simulator)
         
