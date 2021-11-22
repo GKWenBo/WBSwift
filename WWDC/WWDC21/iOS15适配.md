@@ -270,6 +270,14 @@ If enabled, perform validation checks on the workspace configuration as part of 
 
 ### 四、Swift新特性
 
+#### Swift-Evolution
+
+- [SE-0310](https://github.com/apple/swift-evolution/blob/main/proposals/0310-effectful-readonly-properties.md)
+- [SE-0313](https://github.com/apple/swift-evolution/blob/main/proposals/0313-actor-isolation-control.md)
+- [SE-0314](https://github.com/apple/swift-evolution/blob/main/proposals/0314-async-stream.md)
+- [SE-0316](https://github.com/apple/swift-evolution/blob/main/proposals/0316-global-actors.md)
+- [SE-0317](https://github.com/apple/swift-evolution/blob/main/proposals/0317-async-let.md)
+
 [Swift Compiler Driver](https://github.com/apple/swift-driver)
 
 [swift-system](https://github.com/apple/swift-system)

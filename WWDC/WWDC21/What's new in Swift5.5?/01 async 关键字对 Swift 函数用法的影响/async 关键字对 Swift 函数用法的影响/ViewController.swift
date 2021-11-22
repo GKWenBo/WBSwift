@@ -27,6 +27,13 @@ import UIKit
 
 struct Dinner {
     
+    /// 标记property
+    var property: Int {
+        get async throws {
+            return 10
+        }
+    }
+    
     /// 修饰初始化方法
     init() async {
         print("Plan the menu.")
@@ -128,6 +135,10 @@ class ViewController: UIViewController {
             await dinner.preheatOven()
             
             _ = await Dish()
+            
+            // async computed property
+            let p = try await dinner.property
+            print(p)
         }
     }
 }

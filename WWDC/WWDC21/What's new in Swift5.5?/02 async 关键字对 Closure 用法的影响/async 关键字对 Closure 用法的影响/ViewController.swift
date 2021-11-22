@@ -6,7 +6,7 @@
 //
 
 /*
- 
+ 1、async 对函数重载的影响
  */
 
 import UIKit
@@ -22,7 +22,6 @@ struct Dinner {
         print("Chopping vegetables")
     }
     
-    // MARK: - 定义可以抛出异常的异步函数
     func marinateMeat() async throws {
         print("Marinate meat")
     }
@@ -49,6 +48,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        /*
+         { () async -> Void in
+             
+         }
+         */
         
         Task {
             let dinner = await Dinner()

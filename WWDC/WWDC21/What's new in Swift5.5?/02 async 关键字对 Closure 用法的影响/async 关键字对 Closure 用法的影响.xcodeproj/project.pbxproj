@@ -12,9 +12,6 @@
 		C2161FA62748EE8F0017850C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2161FA42748EE8F0017850C /* Main.storyboard */; };
 		C2161FA82748EE9C0017850C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2161FA72748EE9C0017850C /* Assets.xcassets */; };
 		C2161FAB2748EE9C0017850C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2161FA92748EE9C0017850C /* LaunchScreen.storyboard */; };
-		C2161FB62748EE9C0017850C /* async______Closure______Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2161FB52748EE9C0017850C /* async______Closure______Tests.swift */; };
-		C2161FC02748EE9D0017850C /* async______Closure______UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2161FBF2748EE9D0017850C /* async______Closure______UITests.swift */; };
-		C2161FC22748EE9D0017850C /* async______Closure______UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2161FC12748EE9D0017850C /* async______Closure______UITestsLaunchTests.swift */; };
 		C2161FCE2748F1080017850C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2161FA22748EE8F0017850C /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,10 +42,7 @@
 		C2161FAA2748EE9C0017850C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2161FAC2748EE9C0017850C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2161FB12748EE9C0017850C /* async 关键字对 Closure 用法的影响Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "async 关键字对 Closure 用法的影响Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2161FB52748EE9C0017850C /* async______Closure______Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "async______Closure______Tests.swift"; sourceTree = "<group>"; };
 		C2161FBB2748EE9D0017850C /* async 关键字对 Closure 用法的影响UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "async 关键字对 Closure 用法的影响UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2161FBF2748EE9D0017850C /* async______Closure______UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "async______Closure______UITests.swift"; sourceTree = "<group>"; };
-		C2161FC12748EE9D0017850C /* async______Closure______UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "async______Closure______UITestsLaunchTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				C2161F9D2748EE8F0017850C /* async 关键字对 Closure 用法的影响 */,
-				C2161FB42748EE9C0017850C /* async 关键字对 Closure 用法的影响Tests */,
-				C2161FBE2748EE9D0017850C /* async 关键字对 Closure 用法的影响UITests */,
 				C2161F9C2748EE8F0017850C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,23 +100,6 @@
 				C2161FAC2748EE9C0017850C /* Info.plist */,
 			);
 			path = "async 关键字对 Closure 用法的影响";
-			sourceTree = "<group>";
-		};
-		C2161FB42748EE9C0017850C /* async 关键字对 Closure 用法的影响Tests */ = {
-			isa = PBXGroup;
-			children = (
-				C2161FB52748EE9C0017850C /* async______Closure______Tests.swift */,
-			);
-			path = "async 关键字对 Closure 用法的影响Tests";
-			sourceTree = "<group>";
-		};
-		C2161FBE2748EE9D0017850C /* async 关键字对 Closure 用法的影响UITests */ = {
-			isa = PBXGroup;
-			children = (
-				C2161FBF2748EE9D0017850C /* async______Closure______UITests.swift */,
-				C2161FC12748EE9D0017850C /* async______Closure______UITestsLaunchTests.swift */,
-			);
-			path = "async 关键字对 Closure 用法的影响UITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2161FB62748EE9C0017850C /* async______Closure______Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2161FC02748EE9D0017850C /* async______Closure______UITests.swift in Sources */,
-				C2161FC22748EE9D0017850C /* async______Closure______UITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

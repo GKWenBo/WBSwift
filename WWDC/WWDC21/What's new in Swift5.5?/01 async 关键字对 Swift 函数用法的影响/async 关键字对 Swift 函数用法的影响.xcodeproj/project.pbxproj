@@ -13,9 +13,6 @@
 		C2161F692748EB150017850C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2161F672748EB150017850C /* Main.storyboard */; };
 		C2161F6B2748EB1A0017850C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2161F6A2748EB1A0017850C /* Assets.xcassets */; };
 		C2161F6E2748EB1A0017850C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2161F6C2748EB1A0017850C /* LaunchScreen.storyboard */; };
-		C2161F792748EB1B0017850C /* async______Swift________Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2161F782748EB1B0017850C /* async______Swift________Tests.swift */; };
-		C2161F832748EB1B0017850C /* async______Swift________UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2161F822748EB1B0017850C /* async______Swift________UITests.swift */; };
-		C2161F852748EB1B0017850C /* async______Swift________UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2161F842748EB1B0017850C /* async______Swift________UITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +42,7 @@
 		C2161F6D2748EB1A0017850C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C2161F6F2748EB1A0017850C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C2161F742748EB1B0017850C /* async 关键字对 Swift 函数用法的影响Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "async 关键字对 Swift 函数用法的影响Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2161F782748EB1B0017850C /* async______Swift________Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "async______Swift________Tests.swift"; sourceTree = "<group>"; };
 		C2161F7E2748EB1B0017850C /* async 关键字对 Swift 函数用法的影响UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "async 关键字对 Swift 函数用法的影响UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2161F822748EB1B0017850C /* async______Swift________UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "async______Swift________UITests.swift"; sourceTree = "<group>"; };
-		C2161F842748EB1B0017850C /* async______Swift________UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "async______Swift________UITestsLaunchTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				C2161F602748EB150017850C /* async 关键字对 Swift 函数用法的影响 */,
-				C2161F772748EB1B0017850C /* async 关键字对 Swift 函数用法的影响Tests */,
-				C2161F812748EB1B0017850C /* async 关键字对 Swift 函数用法的影响UITests */,
 				C2161F5F2748EB150017850C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,23 +100,6 @@
 				C2161F6F2748EB1A0017850C /* Info.plist */,
 			);
 			path = "async 关键字对 Swift 函数用法的影响";
-			sourceTree = "<group>";
-		};
-		C2161F772748EB1B0017850C /* async 关键字对 Swift 函数用法的影响Tests */ = {
-			isa = PBXGroup;
-			children = (
-				C2161F782748EB1B0017850C /* async______Swift________Tests.swift */,
-			);
-			path = "async 关键字对 Swift 函数用法的影响Tests";
-			sourceTree = "<group>";
-		};
-		C2161F812748EB1B0017850C /* async 关键字对 Swift 函数用法的影响UITests */ = {
-			isa = PBXGroup;
-			children = (
-				C2161F822748EB1B0017850C /* async______Swift________UITests.swift */,
-				C2161F842748EB1B0017850C /* async______Swift________UITestsLaunchTests.swift */,
-			);
-			path = "async 关键字对 Swift 函数用法的影响UITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2161F792748EB1B0017850C /* async______Swift________Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2161F832748EB1B0017850C /* async______Swift________UITests.swift in Sources */,
-				C2161F852748EB1B0017850C /* async______Swift________UITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

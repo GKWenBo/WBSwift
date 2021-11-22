@@ -13,9 +13,6 @@
 		0CC4A33F2746379C00A0FC8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC4A33D2746379C00A0FC8F /* Main.storyboard */; };
 		0CC4A341274637A000A0FC8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CC4A340274637A000A0FC8F /* Assets.xcassets */; };
 		0CC4A344274637A000A0FC8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC4A342274637A000A0FC8F /* LaunchScreen.storyboard */; };
-		0CC4A34F274637A000A0FC8F /* suspension_pointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4A34E274637A000A0FC8F /* suspension_pointTests.swift */; };
-		0CC4A359274637A000A0FC8F /* suspension_pointUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4A358274637A000A0FC8F /* suspension_pointUITests.swift */; };
-		0CC4A35B274637A000A0FC8F /* suspension_pointUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4A35A274637A000A0FC8F /* suspension_pointUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +42,7 @@
 		0CC4A343274637A000A0FC8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CC4A345274637A000A0FC8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CC4A34A274637A000A0FC8F /* suspension pointTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "suspension pointTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CC4A34E274637A000A0FC8F /* suspension_pointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suspension_pointTests.swift; sourceTree = "<group>"; };
 		0CC4A354274637A000A0FC8F /* suspension pointUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "suspension pointUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CC4A358274637A000A0FC8F /* suspension_pointUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suspension_pointUITests.swift; sourceTree = "<group>"; };
-		0CC4A35A274637A000A0FC8F /* suspension_pointUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suspension_pointUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				0CC4A3362746379C00A0FC8F /* suspension point */,
-				0CC4A34D274637A000A0FC8F /* suspension pointTests */,
-				0CC4A357274637A000A0FC8F /* suspension pointUITests */,
 				0CC4A3352746379C00A0FC8F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -108,23 +100,6 @@
 				0CC4A345274637A000A0FC8F /* Info.plist */,
 			);
 			path = "suspension point";
-			sourceTree = "<group>";
-		};
-		0CC4A34D274637A000A0FC8F /* suspension pointTests */ = {
-			isa = PBXGroup;
-			children = (
-				0CC4A34E274637A000A0FC8F /* suspension_pointTests.swift */,
-			);
-			path = "suspension pointTests";
-			sourceTree = "<group>";
-		};
-		0CC4A357274637A000A0FC8F /* suspension pointUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0CC4A358274637A000A0FC8F /* suspension_pointUITests.swift */,
-				0CC4A35A274637A000A0FC8F /* suspension_pointUITestsLaunchTests.swift */,
-			);
-			path = "suspension pointUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CC4A34F274637A000A0FC8F /* suspension_pointTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CC4A35B274637A000A0FC8F /* suspension_pointUITestsLaunchTests.swift in Sources */,
-				0CC4A359274637A000A0FC8F /* suspension_pointUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

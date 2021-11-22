@@ -7,14 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C38C8F3274B864400502269 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C38C8F2274B864400502269 /* Main.storyboard */; };
 		0CC4A37427463E9700A0FC8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4A37327463E9700A0FC8F /* AppDelegate.swift */; };
 		0CC4A37627463E9700A0FC8F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4A37527463E9700A0FC8F /* SceneDelegate.swift */; };
 		0CC4A37827463E9700A0FC8F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4A37727463E9700A0FC8F /* ViewController.swift */; };
 		0CC4A37D27463E9D00A0FC8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CC4A37C27463E9D00A0FC8F /* Assets.xcassets */; };
 		0CC4A38027463E9D00A0FC8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CC4A37E27463E9D00A0FC8F /* LaunchScreen.storyboard */; };
-		0CC4A38B27463E9D00A0FC8F /* ___task_group_______Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4A38A27463E9D00A0FC8F /* ___task_group_______Tests.swift */; };
-		0CC4A39527463E9D00A0FC8F /* ___task_group_______UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4A39427463E9D00A0FC8F /* ___task_group_______UITests.swift */; };
-		0CC4A39727463E9D00A0FC8F /* ___task_group_______UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC4A39627463E9D00A0FC8F /* ___task_group_______UITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +33,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C38C8F2274B864400502269 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0CC4A37027463E9700A0FC8F /* 使用 task group 组织并发任务.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "使用 task group 组织并发任务.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CC4A37327463E9700A0FC8F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CC4A37527463E9700A0FC8F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,10 +42,7 @@
 		0CC4A37F27463E9D00A0FC8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CC4A38127463E9D00A0FC8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CC4A38627463E9D00A0FC8F /* 使用 task group 组织并发任务Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "使用 task group 组织并发任务Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CC4A38A27463E9D00A0FC8F /* ___task_group_______Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___task_group_______Tests.swift"; sourceTree = "<group>"; };
 		0CC4A39027463E9D00A0FC8F /* 使用 task group 组织并发任务UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "使用 task group 组织并发任务UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CC4A39427463E9D00A0FC8F /* ___task_group_______UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___task_group_______UITests.swift"; sourceTree = "<group>"; };
-		0CC4A39627463E9D00A0FC8F /* ___task_group_______UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "___task_group_______UITestsLaunchTests.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				0CC4A37227463E9700A0FC8F /* 使用 task group 组织并发任务 */,
-				0CC4A38927463E9D00A0FC8F /* 使用 task group 组织并发任务Tests */,
-				0CC4A39327463E9D00A0FC8F /* 使用 task group 组织并发任务UITests */,
 				0CC4A37127463E9700A0FC8F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,28 +94,12 @@
 				0CC4A37327463E9700A0FC8F /* AppDelegate.swift */,
 				0CC4A37527463E9700A0FC8F /* SceneDelegate.swift */,
 				0CC4A37727463E9700A0FC8F /* ViewController.swift */,
+				0C38C8F2274B864400502269 /* Main.storyboard */,
 				0CC4A37C27463E9D00A0FC8F /* Assets.xcassets */,
 				0CC4A37E27463E9D00A0FC8F /* LaunchScreen.storyboard */,
 				0CC4A38127463E9D00A0FC8F /* Info.plist */,
 			);
 			path = "使用 task group 组织并发任务";
-			sourceTree = "<group>";
-		};
-		0CC4A38927463E9D00A0FC8F /* 使用 task group 组织并发任务Tests */ = {
-			isa = PBXGroup;
-			children = (
-				0CC4A38A27463E9D00A0FC8F /* ___task_group_______Tests.swift */,
-			);
-			path = "使用 task group 组织并发任务Tests";
-			sourceTree = "<group>";
-		};
-		0CC4A39327463E9D00A0FC8F /* 使用 task group 组织并发任务UITests */ = {
-			isa = PBXGroup;
-			children = (
-				0CC4A39427463E9D00A0FC8F /* ___task_group_______UITests.swift */,
-				0CC4A39627463E9D00A0FC8F /* ___task_group_______UITestsLaunchTests.swift */,
-			);
-			path = "使用 task group 组织并发任务UITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C38C8F3274B864400502269 /* Main.storyboard in Resources */,
 				0CC4A38027463E9D00A0FC8F /* LaunchScreen.storyboard in Resources */,
 				0CC4A37D27463E9D00A0FC8F /* Assets.xcassets in Resources */,
 			);
@@ -264,7 +243,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CC4A38B27463E9D00A0FC8F /* ___task_group_______Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,8 +250,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0CC4A39527463E9D00A0FC8F /* ___task_group_______UITests.swift in Sources */,
-				0CC4A39727463E9D00A0FC8F /* ___task_group_______UITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

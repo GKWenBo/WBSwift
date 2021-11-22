@@ -31,21 +31,21 @@ struct Post: Codable {
 class Forum {
     
     func update(userIds: Array<Int>) {
-      let urlSession = URLSession.shared
-      
-      for userId in userIds {
-        let url = URL(string: "https://jsonplaceholder.typicode.com/posts/\(userId)")!
-        let dataTask = urlSession.dataTask(with: url) {
-          data, response, error in
-          guard let data = data,
-                let post = try? JSONDecoder().decode(Post.self, from: data)
-          else { return }
-          
-          print("Decode post ID: \(post.id) @Thread: \(Thread.current)")
-        }
+        let urlSession = URLSession.shared
         
-        dataTask.resume()
-      }
+        for userId in userIds {
+            let url = URL(string: "https://jsonplaceholder.typicode.com/posts/\(userId)")!
+            let dataTask = urlSession.dataTask(with: url) {
+                data, response, error in
+                guard let data = data,
+                      let post = try? JSONDecoder().decode(Post.self, from: data)
+                else { return }
+                
+                print("Decode post ID: \(post.id) @Thread: \(Thread.current)")
+            }
+            
+            dataTask.resume()
+        }
     }
     
     func updateAsync(userIds: Array<Int>) async {
@@ -53,6 +53,14 @@ class Forum {
             for userId in userIds {
                 let url = URL(string: "https://jsonplaceholder.typicode.com/posts/\(userId)")!
                 group.addTask {
+                    /*
+                     /// Convenience method to load data using an URL, creates and resumes an URLSessionDataTask internally.
+                     ///
+                     /// - Parameter url: The URL for which to load data.
+                     /// - Parameter delegate: Task-specific delegate.
+                     /// - Returns: Data and response.
+                     public func data(from url: URL, delegate: URLSessionTaskDelegate? = nil) async throws -> (Data, URLResponse)
+                     */
                     let (data, _ /*response*/) = try await URLSession.shared.data(from: url)
                     guard let post = try? JSONDecoder().decode(Post.self, from: data) else {
                         return Post.empty
@@ -72,9 +80,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-//        test()
+        test()
         Task {
-            await test2()
+//            await test2()
         }
     }
 
