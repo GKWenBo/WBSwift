@@ -13,6 +13,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <availability.h>
+#import <Foundation/NSObjCRuntime.h>
 
 // [AFNetworking](https://github.com/AFNetworking/AFNetworking)适配方案
 #if ((__IPHONE_OS_VERSION_MAX_ALLOWED && __IPHONE_OS_VERSION_MAX_ALLOWED < 100000) || (__MAC_OS_VERSION_MAX_ALLOWED && __MAC_OS_VERSION_MAX_ALLOWED < 101200) ||(__WATCH_OS_MAX_VERSION_ALLOWED && __WATCH_OS_MAX_VERSION_ALLOWED < 30000) ||(__TV_OS_MAX_VERSION_ALLOWED && __TV_OS_MAX_VERSION_ALLOWED < 100000))
@@ -29,16 +31,19 @@ NS_ASSUME_NONNULL_BEGIN
 #define IOS14_SDK_ALLOWED YES
 #endif
 
-// 类引入时版本
+// MARK: - 类引入时版本
 API_AVAILABLE(ios(2.0)) @interface AdaptiveOC : NSObject
 
-/// 定义属性适应版本
+// MARK: - 标记方法不可用
++ (instancetype)new NS_UNAVAILABLE;
+
+// MARK: - API引入版本
 #ifdef __IPHONE_15_0
 @property (nonatomic, strong) UINavigationBarAppearance *km_transitionBarAppearance API_AVAILABLE(ios(15.0));
 #endif
 
-// API启用，iOS7.0引入，11.0废弃
-@property(nonatomic,assign) BOOL automaticallyAdjustsScrollViewInsets API_DEPRECATED("Use UIScrollView's contentInsetAdjustmentBehavior instead", ios(7.0,11.0),tvos(7.0,11.0)); // Defaults to YES
+// MARK: - API启用，iOS7.0引入，11.0废弃
+@property(nonatomic,assign) BOOL automaticallyAdjustsScrollViewInsets API_DEPRECATED("Use UIScrollView's contentInsetAdjustmentBehavior instead", ios(7.0,11.0), tvos(7.0,11.0)); // Defaults to YES
 
 @end
 

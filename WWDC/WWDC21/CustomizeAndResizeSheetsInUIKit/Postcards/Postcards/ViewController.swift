@@ -44,15 +44,16 @@ class ViewController: UIViewController,
             if let popover = settingsViewController.popoverPresentationController {
                 popover.barButtonItem = sender
                 
+                // 获取UISheetPresentationController
                 let sheet = popover.adaptiveSheetPresentationController
-                // 设置大小
+                // 设置内容大小
                 sheet.detents = [.medium(), .large()]
                 sheet.largestUndimmedDetentIdentifier =
                 PresentationHelper.sharedInstance.largestUndimmedDetentIdentifier
                 // 设置为NO，拖动不会触发展开
                 sheet.prefersScrollingExpandsWhenScrolledToEdge =
                 PresentationHelper.sharedInstance.prefersScrollingExpandsWhenScrolledToEdge
-                // 是否适配横屏尺寸
+                // 是否适配横屏尺寸，充满安全域
                 sheet.prefersEdgeAttachedInCompactHeight =
                 PresentationHelper.sharedInstance.prefersEdgeAttachedInCompactHeight
                 // YES：允许preferredContentSize在边缘附加时影响工作表的宽度
@@ -114,7 +115,10 @@ class ViewController: UIViewController,
         
         // MARK: - 选中动画缩回
         if let sheet = picker.popoverPresentationController?.adaptiveSheetPresentationController {
+            // 无动画更新大小
 //            sheet.selectedDetentIdentifier = .medium
+            
+            // 动画改变大小
             sheet.animateChanges {
                 sheet.selectedDetentIdentifier = .medium
             }
@@ -122,7 +126,6 @@ class ViewController: UIViewController,
     }
     
     // MARK: UIFontPickerViewController
-    
     @IBAction func showFontPicker(_ sender: UIBarButtonItem) {
         
         guard presentedViewController == nil else {
