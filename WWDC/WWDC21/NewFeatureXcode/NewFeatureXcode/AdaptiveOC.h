@@ -16,6 +16,7 @@
 #import <availability.h>
 #import <Foundation/NSObjCRuntime.h>
 
+// MARK: - AFNetworking
 // [AFNetworking](https://github.com/AFNetworking/AFNetworking)适配方案
 #if ((__IPHONE_OS_VERSION_MAX_ALLOWED && __IPHONE_OS_VERSION_MAX_ALLOWED < 100000) || (__MAC_OS_VERSION_MAX_ALLOWED && __MAC_OS_VERSION_MAX_ALLOWED < 101200) ||(__WATCH_OS_MAX_VERSION_ALLOWED && __WATCH_OS_MAX_VERSION_ALLOWED < 30000) ||(__TV_OS_MAX_VERSION_ALLOWED && __TV_OS_MAX_VERSION_ALLOWED < 100000))
     #define AF_CAN_INCLUDE_SESSION_TASK_METRICS 0
@@ -23,13 +24,33 @@
     #define AF_CAN_INCLUDE_SESSION_TASK_METRICS 1
 #endif
 
+/*
+ #if AF_CAN_INCLUDE_SESSION_TASK_METRICS
+ @property (nonatomic, strong) NSURLSessionTaskMetrics *sessionTaskMetrics AF_API_AVAILABLE(ios(10), macosx(10.12), watchos(3), tvos(10));
+ #endif
+ */
+
 NS_ASSUME_NONNULL_BEGIN
 
+// MARK: - QMUI_iOS
 // [QMUI_iOS](https://github.com/Tencent/QMUI_iOS)适配方案
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 140000
 /// 当前编译使用的 Base SDK 版本为 iOS 14.0 及以上
 #define IOS14_SDK_ALLOWED YES
 #endif
+/*
+ + (BOOL)isMac {
+ #ifdef IOS14_SDK_ALLOWED
+     if (@available(iOS 14.0, *)) {
+         return [NSProcessInfo processInfo].isiOSAppOnMac || [NSProcessInfo processInfo].isMacCatalystApp;
+     }
+ #endif
+     if (@available(iOS 13.0, *)) {
+         return [NSProcessInfo processInfo].isMacCatalystApp;
+     }
+     return NO;
+ }
+ */
 
 // MARK: - 类引入时版本
 API_AVAILABLE(ios(2.0)) @interface AdaptiveOC : NSObject

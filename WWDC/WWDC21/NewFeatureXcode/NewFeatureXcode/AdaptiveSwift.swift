@@ -18,9 +18,10 @@
  
  例子：
  @available(macOS 10.15, iOS 13, watchOS 6, tvOS 13, *)
+*/
  
- 
- ## Introduced, Deprecated, Obsoleted, and Unavailable
+// MARK: - Introduced, Deprecated, Obsoleted, and Unavailable
+/*
  // With introduced, deprecated, and/or obsoleted
  @available(platform | *
            , introduced: version , deprecated: version , obsoleted: version
@@ -50,8 +51,10 @@
  @available(tvOS, unavailable)
  @available(macCatalyst, unavailable)
  func handleShakeGesture() { … }
+*/
  
- ## Swift Language Availability
+ // MARK: - Swift Language Availability
+/*
  @available(swift version)
  
  例子：
@@ -71,7 +74,6 @@
          }
      }
  }
- 
  */
 
 import Foundation
@@ -81,7 +83,6 @@ import UIKit
 // 是否能引人某框架 && 系统是
 #if canImport(Combine) && os(iOS) && !os(watchOS)
 import Combine
-
 import UIKit
 
 
@@ -110,7 +111,7 @@ class AdaptiveSwift {
         if #available(iOS 15.0, *) {
             
         } else {
-            
+            /// fallback statements 
         }
         
         // MAKR: - NSObject responds

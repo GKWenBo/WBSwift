@@ -19,6 +19,7 @@
 		C27590DA2746959300CC148A /* NewFeatureXcodeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27590D92746959300CC148A /* NewFeatureXcodeUITests.swift */; };
 		C27590DC2746959300CC148A /* NewFeatureXcodeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27590DB2746959300CC148A /* NewFeatureXcodeUITestsLaunchTests.swift */; };
 		C27590E9274695D000CC148A /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27590E8274695D000CC148A /* SwiftUIView.swift */; };
+		C281CA3F274D30B3009545E0 /* DocC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C281CA3E274D30B3009545E0 /* DocC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		C27590D92746959300CC148A /* NewFeatureXcodeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeatureXcodeUITests.swift; sourceTree = "<group>"; };
 		C27590DB2746959300CC148A /* NewFeatureXcodeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFeatureXcodeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C27590E8274695D000CC148A /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
+		C281CA3E274D30B3009545E0 /* DocC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				0CC4A3A327474DDD00A0FC8F /* AdaptiveSwift.swift */,
 				0CC4A3A62747510600A0FC8F /* AdaptiveOC.h */,
 				0CC4A3A72747510600A0FC8F /* AdaptiveOC.m */,
+				C281CA3E274D30B3009545E0 /* DocC.swift */,
 				C27590BE2746959000CC148A /* Main.storyboard */,
 				C27590C12746959200CC148A /* Assets.xcassets */,
 				C27590C32746959200CC148A /* LaunchScreen.storyboard */,
@@ -273,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C27590BD2746959000CC148A /* ViewController.swift in Sources */,
+				C281CA3F274D30B3009545E0 /* DocC.swift in Sources */,
 				C27590B92746959000CC148A /* AppDelegate.swift in Sources */,
 				0CC4A3A427474DDD00A0FC8F /* AdaptiveSwift.swift in Sources */,
 				0CC4A3A82747510600A0FC8F /* AdaptiveOC.m in Sources */,
@@ -384,10 +388,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = NO;
+				INFOPLIST_KEY_UISupportsDocumentBrowser = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				RUN_DOCUMENTATION_COMPILER = NO;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -439,9 +446,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = NO;
+				INFOPLIST_KEY_UISupportsDocumentBrowser = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				RUN_DOCUMENTATION_COMPILER = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -459,11 +469,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NewFeatureXcode/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +483,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = wenbo.NewFeatureXcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_DOCUMENTATION_COMPILER = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "NewFeatureXcode/NewFeatureXcode-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -489,11 +502,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NewFeatureXcode/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportsDocumentBrowser = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -501,6 +516,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = wenbo.NewFeatureXcode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_DOCUMENTATION_COMPILER = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "NewFeatureXcode/NewFeatureXcode-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
