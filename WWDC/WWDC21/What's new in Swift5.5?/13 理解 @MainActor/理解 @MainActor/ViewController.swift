@@ -12,7 +12,7 @@
 
 import UIKit
 
-// MARK: - @globalActor
+// MARK: - 1、@globalActor
 /*
  类似这种“有效期”覆盖程序所有作用域的 actor，叫做 global actor。我们可以像下面这样自定义一个 global actor：
  
@@ -26,7 +26,7 @@ struct MyGlobalActor {
     static let shared = MyActor()
 }
 
-// MARK: - @MainActor
+// MARK: - 2、@MainActor
 /*
  了解了 global actor 之后，我们来看 @MainActor。它就是一个 global actor，用来把属于它的所有元素，都隔离在主线程执行。在 Xcode 13 里，UIKit 中所有和 UI 有关的类型，都加上了这个修饰。
  */
@@ -73,9 +73,7 @@ class ViewController: UIViewController {
         
         self.view.addSubview(titleLabel)
         
-        Task.detached {
-            await self.loadTodo(id: 1)
-        }
+        self.loadTodo(id: 1)
     }
     
     /*

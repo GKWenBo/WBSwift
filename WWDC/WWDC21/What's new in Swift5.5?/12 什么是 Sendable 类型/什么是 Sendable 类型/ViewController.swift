@@ -12,7 +12,7 @@
  4、Sendable type
  */
 
-// MARK: - Sendable Types
+// MARK: - 1、Sendable Types
 /*
  为了避免这类问题，Swift 提出了一个概念，叫做 Sendable。关于它的详细信息，大家可以参考 SE-0302。
 
@@ -26,7 +26,7 @@
  5、标记为 @Sendable 的函数；
  */
 
-// MARK: - Sendable class
+// MARK: - 2、Sendable class
 // 第一种，是直接改造 Person：
 /*
 final class Person : Sendable {
@@ -53,7 +53,7 @@ final class Person : Sendable {
  
  */
 
-// MARK: - Sendable struct
+// MARK: - 3、Sendable struct
 /*
  struct Person {
    var name: String
@@ -64,7 +64,7 @@ final class Person : Sendable {
  }
  */
 
-// MARK: - Sendable type
+// MARK: - 4、Sendable type
 /*
  最后一种做法，是修改 primaryOwner 本身，根据方法实际的需求，让它返回一个 Sendable 类型。例如在我们的例子中，如果只是需要使用姓名，就不应该让它返回 Person，而是应该返回 String。由于 String 是个 Sendable 类型，返回它是并发安全的，我们也无法通过它间接修改 actor 的内部属性。
  

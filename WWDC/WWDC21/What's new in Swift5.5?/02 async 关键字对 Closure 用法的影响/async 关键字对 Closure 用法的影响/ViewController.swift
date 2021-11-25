@@ -26,7 +26,7 @@ struct Dinner {
         print("Marinate meat")
     }
     
-    // MARK: - async 对函数重载的影响
+    // MARK: - 1、async 对函数重载的影响
     /*
      Swift 采取了更加精致的策略，编译器会判断调用函数时的上下文环境。在同步环境中选择同步的版本，异步的环境中选择异步的版本。
      */
@@ -57,14 +57,14 @@ class ViewController: UIViewController {
         
         Task {
             let dinner = await Dinner()
-            await dinner.cook({ () async -> Void in
+            await dinner.cook({ () async -> Void in // implicitly async
                 await dinner.chopVegetable()
                 try? await dinner.marinateMeat()
                 await dinner.preheatOven()
             })
             
             // 或者
-            await dinner.cook {
+            await dinner.cook { // implicitly async
                 await dinner.chopVegetable()
                 try? await dinner.marinateMeat()
                 await dinner.preheatOven()

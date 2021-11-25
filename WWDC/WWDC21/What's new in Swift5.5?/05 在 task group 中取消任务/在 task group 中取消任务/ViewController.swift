@@ -22,9 +22,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
 
-    // MARK: - withThrowingTaskGroup
+    // MARK: - 1、withThrowingTaskGroup
     /*
      1、这次，我们使用了 withThrowingTaskGroup 来创建 task group，表示其中并行执行的任务是可能出错的。而用于创建任务的 group 的类型，也因此变成了 ThrowingTaskGroup；
      2、在收集处理后的食材时，我们要使用 try await 等待每一个异步任务的结果
@@ -55,8 +56,5 @@ class ViewController: UIViewController {
     func startDoTask() async {
         print("start do task.")
     }
-    
-    // MARK: - CancellationError
-    
 }
 

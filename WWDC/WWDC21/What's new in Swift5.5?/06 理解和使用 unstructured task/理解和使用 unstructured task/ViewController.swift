@@ -6,7 +6,7 @@
 //
 
 /*
- 1、在异步环境中使用 Task
+ 1、在异步环境中使用Task
  2、在同步环境中执行任务
  3、Unstructured task 的嵌套
  */
@@ -49,12 +49,12 @@ class ViewController: UIViewController {
          2、第二个参数是个异步 closure，表示这个任务要执行的代码，这两个 init 方法的区别，主要就是 closure 是否会抛出异常。这个 closure 没有参数，但允许让我们指定一个返回值，表示任务成功执行后的结果。在我们的例子中，当然就是 Meal 了。至于那个 @Sendable 修饰，我们暂时先忽略它就好了；
          */
         
-        // MARK: - 在同步环境中执行任务
+        // MARK: - 2、在同步环境中执行任务
         Task {
             await asyncFunc()
         }
         
-        // MARK: - Unstructured task 的嵌套
+        // MARK: - 3、Unstructured task 的嵌套
         /*
          这一节最后，我们再回过头看看刚才写的同步 main 函数。我们使用了一个嵌套的 Task 结构，外面的叫做父任务，里面的叫做子任务。
 
@@ -72,8 +72,8 @@ class ViewController: UIViewController {
         }
     }
     
-    // MARK: - 在异步环境中使用 Task
-    func asyncFunc() async{
+    // 1、MARK: - 在异步环境中使用 Task
+    func asyncFunc() async {
         Task(priority: .userInitiated) {
             await myFunc()
         }
@@ -82,6 +82,5 @@ class ViewController: UIViewController {
     func myFunc() async -> Int {
         return 0
     }
-
 }
 

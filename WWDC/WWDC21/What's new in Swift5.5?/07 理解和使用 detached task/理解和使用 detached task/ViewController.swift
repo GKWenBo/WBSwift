@@ -14,7 +14,7 @@
 
 import UIKit
 
-// MARK: - detached task 不能修改 actor 的状态
+// MARK: - 2、detached task 不能修改 actor 的状态
 actor AtomicIncrementor {
     private var value: Int = 0
     
@@ -42,22 +42,30 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        test1()
+        
+//        test2()
+    }
+    
+    func test1() {
         /*
          播放 BGM 和asyncFunc两个任务的执行顺序是不确定的，它们是两个并行的任务。
          */
         
-//        Task(priority: .userInitiated) {
-//            Task.detached {
-//                print("Start playing BGM.")
-//            }
-//
-//            await asyncFunc()
-//
-//            Task.detached {
-//                print("Stop playing BGM.")
-//            }
-//        }
-        
+        Task(priority: .userInitiated) {
+            Task.detached {
+                print("Start playing BGM.")
+            }
+            
+            await asyncFunc()
+            
+            Task.detached {
+                print("Stop playing BGM.")
+            }
+        }
+    }
+    
+    func test2() {
         // MARK: - 优先级的区别
         /*
          可以看到，withUnsafeCurrentTask 接受一个 closure 参数。这个 closure 自身则有一个 UnsafeCurrentTask? 类型的参数，表示当前任务。我们可以通过这个参数，访问当前任务的若干属性。例如在我们的例子中，就打印了当前任务的优先级。
@@ -98,7 +106,7 @@ class ViewController: UIViewController {
         print("asyncFunc")
     }
 
-    // MARK： - Detached 和 unstructured task 的区别
+    // MARK: - 1、Detached 和 unstructured task 的区别
     /*
      第一个区别是 unstructured task 会继承创建任务时的上下文环境。但是，detached task 不会。用 Swift 官方注释对 detached task 的描述就是：Run given throwing operation as part of a new top-level task。也就是说，每一个 detached task 都是在并发模型的顶级作用域的。这也就意味着，detached task 不会继承来自创建环境的优先级设置。
      
@@ -123,7 +131,6 @@ class ViewController: UIViewController {
      */
     
 }
-
 
 extension TaskPriority: CustomStringConvertible {
     public var description: String {

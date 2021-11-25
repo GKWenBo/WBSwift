@@ -10,6 +10,27 @@
 
 @implementation AdaptiveOC
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+        
+        [self oldMethod];
+        
+        if (@available(iOS 15.0, *)) {
+            // new feature
+        } else {
+            // fallback
+        }
+    }
+    return self;
+}
+
+- (void)oldMethod {
+    
+}
+
 #ifdef __IPHONE_15_0
 - (void)setKm_transitionBarAppearance:(UINavigationBarAppearance *)km_transitionBarAppearance API_AVAILABLE(ios(15.0)) {
     objc_setAssociatedObject(self, @selector(km_transitionBarAppearance), km_transitionBarAppearance, OBJC_ASSOCIATION_RETAIN_NONATOMIC);

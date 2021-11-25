@@ -30,6 +30,8 @@ struct Post: Codable {
 
 class Forum {
     
+    /// 获取文章信息
+    /// - Parameter userIds: 用户ids
     func update(userIds: Array<Int>) {
         let urlSession = URLSession.shared
         
@@ -80,12 +82,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        test()
+        
         Task {
+            test()
+            
 //            await test2()
         }
     }
 
+    // 传统异步方式
     func test() {
         Forum().update(userIds: Array(0..<100))
         Forum().update(userIds: Array(0..<100))
@@ -95,6 +100,7 @@ class ViewController: UIViewController {
         RunLoop.main.run()
     }
     
+    // 使用 async
     func test2() async {
         await withTaskGroup(of: Void.self, body: { group in
             for _ in 0..<5 {
@@ -104,6 +110,5 @@ class ViewController: UIViewController {
             }            
         })
     }
-
 }
 

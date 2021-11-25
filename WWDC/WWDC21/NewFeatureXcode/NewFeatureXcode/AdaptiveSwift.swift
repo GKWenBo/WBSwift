@@ -33,7 +33,7 @@
  1、platform：平台，（*）指所有平台
  2、introduced: version：第一个可用版本
  3、deprecated: version：第一个弃用版本
- 4、obsoleted: version：第一个编译报错版本
+ 4、obsoleted: version：第一个编译报错版本，移除的版本
  5、unavailable：导致编译API编译错误
  6、message：被列入编译器警告或错误字符串
  
@@ -84,7 +84,6 @@ import UIKit
 #if canImport(Combine) && os(iOS) && !os(watchOS)
 import Combine
 import UIKit
-
 
 @available(swift 5)
 // 类引入时系统版本
@@ -141,7 +140,20 @@ class AdaptiveSwift {
         #else
         
         #endif
+        
+        // 消除方法弃用警告
+        (AdaptiveSwift() as IgnoringMethodDeprecation).oldFunc()
     }
+    
+    // MARK: - 标记方法废弃
+    @available(iOS, introduced: 9.0, deprecated: 13.0, message: "方法废弃")
+    func oldFunc() { }
 }
+
+protocol IgnoringMethodDeprecation {
+    func oldFunc()
+}
+
+extension AdaptiveSwift: IgnoringMethodDeprecation {}
 
 #endif

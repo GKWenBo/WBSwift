@@ -57,6 +57,7 @@ API_AVAILABLE(ios(2.0)) @interface AdaptiveOC : NSObject
 
 // MARK: - 标记方法不可用
 + (instancetype)new NS_UNAVAILABLE;
+- (instancetype)init __attribute__((unavailable("你不要用 -init")));
 
 // MARK: - API引入版本
 #ifdef __IPHONE_15_0
@@ -65,6 +66,9 @@ API_AVAILABLE(ios(2.0)) @interface AdaptiveOC : NSObject
 
 // MARK: - API启用，iOS7.0引入，11.0废弃
 @property(nonatomic,assign) BOOL automaticallyAdjustsScrollViewInsets API_DEPRECATED("Use UIScrollView's contentInsetAdjustmentBehavior instead", ios(7.0,11.0), tvos(7.0,11.0)); // Defaults to YES
+
+- (void)oldMethod API_DEPRECATED("方法弃用", ios(2.0,6.0));
+- (void)oldMethod1 __attribute__((availability(ios,introduced=2_0,deprecated=7_0,obsoleted=13_0,message="用 -newMethod 这个方法替代 ")));
 
 @end
 

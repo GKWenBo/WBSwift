@@ -71,7 +71,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         Task {
-            try await asyncFunc()
+            await asyncFunc()
         }
     }
     
@@ -89,6 +89,5 @@ class ViewController: UIViewController {
         
         print("Account\(account11.number) balance: \(await account11.balance)")
     }
-    
 }
 
