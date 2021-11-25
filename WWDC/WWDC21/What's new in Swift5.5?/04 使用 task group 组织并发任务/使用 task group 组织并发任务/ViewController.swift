@@ -62,7 +62,7 @@ class ViewController: UIViewController {
 //            _ = await makeDinner1()
             
             // test 组织task group结构
-            await makeDinnerWithTaskGroup1()
+            _ = await makeDinnerWithTaskGroup1()
         }
     }
 
@@ -158,7 +158,6 @@ class ViewController: UIViewController {
                     foods.append(food)
                 }
             }
-            
         })
         return oven.cook(foods, seconds: 300)
     }

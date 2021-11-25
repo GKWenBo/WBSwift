@@ -6,6 +6,13 @@
 //
 
 /*
+ 1、API_AVAILABLE、NS_UNAVAILABLE
+ 2、NS_DESIGNATED_INITIALIZER
+ 3、__IPHONE_OS_VERSION_MAX_ALLOWED、__IPHONE_15_0
+ 4、@available
+ */
+
+/*
  availability.h
  AvailabilityVersion.h
  NSObjCRuntime.h
@@ -59,6 +66,11 @@ API_AVAILABLE(ios(2.0)) @interface AdaptiveOC : NSObject
 + (instancetype)new NS_UNAVAILABLE;
 - (instancetype)init __attribute__((unavailable("你不要用 -init")));
 
+/// 指定初始化器
+/// @param name name
+- (instancetype)initWithName:(NSString *)name NS_DESIGNATED_INITIALIZER;
+
+//__IPHONE_15_0
 // MARK: - API引入版本
 #ifdef __IPHONE_15_0
 @property (nonatomic, strong) UINavigationBarAppearance *km_transitionBarAppearance API_AVAILABLE(ios(15.0));

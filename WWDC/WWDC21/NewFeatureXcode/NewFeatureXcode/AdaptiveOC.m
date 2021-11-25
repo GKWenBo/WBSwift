@@ -10,16 +10,14 @@
 
 @implementation AdaptiveOC
 
-- (instancetype)init
-{
-    self = [super init];
-    if (self) {
+- (instancetype)initWithName:(NSString *)name {
+    if (self = [super init]) {
         self.automaticallyAdjustsScrollViewInsets = NO;
         
         [self oldMethod];
         
         if (@available(iOS 15.0, *)) {
-            // new feature
+            // new api
         } else {
             // fallback
         }
@@ -27,9 +25,7 @@
     return self;
 }
 
-- (void)oldMethod {
-    
-}
+- (void)oldMethod {}
 
 #ifdef __IPHONE_15_0
 - (void)setKm_transitionBarAppearance:(UINavigationBarAppearance *)km_transitionBarAppearance API_AVAILABLE(ios(15.0)) {

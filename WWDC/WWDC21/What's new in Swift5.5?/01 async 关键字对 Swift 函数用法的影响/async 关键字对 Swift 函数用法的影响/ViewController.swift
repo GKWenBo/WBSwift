@@ -135,6 +135,7 @@ class ViewController: UIViewController {
              2、一个 await 表达式可以包含一个以上的潜在 suspension point。
              */
             let dinner = await Dinner()
+            // 调用可抛错误async函数， try必须在await前面，语法格式，避免争议
             try await dinner.marinateMeat()
             
             await dinner.preheatOven()

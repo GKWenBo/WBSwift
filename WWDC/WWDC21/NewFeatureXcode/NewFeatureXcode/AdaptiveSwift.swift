@@ -5,6 +5,15 @@
 //  Created by wenbo on 2021/11/19.
 //
 
+/*
+ 1、@available(swift版本，方法，属性，类...)
+ 2、#available
+ 3、responds
+ 4、systemVersion
+ 5、canImport(Combine) && os(iOS) && !os(watchOS)
+ 6、消除弃用警告
+ */
+
 // MARK: - Swift API Availability
 /*
  WWDC2019引入

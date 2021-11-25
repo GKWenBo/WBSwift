@@ -33,14 +33,14 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        //        testTableView()
+//                testTableView()
         
-        //        testButton()
+                testButton()
         //        createButton1()
         //        createButton2()
         //        createButton3()
         //         createButton4()
-        createButton5()
+//        createButton5()
         
         //        testNavigationBar()
         
@@ -80,10 +80,13 @@ class ViewController: UIViewController {
          */
         var config = UIButton.Configuration.filled()
         config.title = "Add to Cart"
+        // 使用sfsymbol
         config.image = UIImage(systemName: "cart.badge.plus")
+        // 图片位置
         config.imagePlacement = .trailing
         // 按钮大小
         config.buttonSize = .large
+        // 圆角样式
         config.cornerStyle = .capsule
         
         let addToCartButton = UIButton(configuration: config)
@@ -276,6 +279,7 @@ class ViewController: UIViewController {
         }
     }
     
+    // MARK: - Using a hierarchical color symbol
     func testSFSymbol() {
         /// Using a hierarchical color symbol
         let configuration = UIImage.SymbolConfiguration(hierarchicalColor: .systemOrange)

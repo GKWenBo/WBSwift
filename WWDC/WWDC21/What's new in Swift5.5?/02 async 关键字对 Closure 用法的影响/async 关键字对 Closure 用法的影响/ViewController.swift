@@ -7,6 +7,7 @@
 
 /*
  1、async 对函数重载的影响
+ 2、async对Closure用法的影响
  */
 
 import UIKit
@@ -28,7 +29,7 @@ struct Dinner {
     
     // MARK: - 1、async 对函数重载的影响
     /*
-     Swift 采取了更加精致的策略，编译器会判断调用函数时的上下文环境。在同步环境中选择同步的版本，异步的环境中选择异步的版本。
+     Swift采取了更加精致的策略，编译器会判断调用函数时的上下文环境。在同步环境中选择同步的版本，异步的环境中选择异步的版本。
      */
     func preheatOven(_ completionHandler: (() -> Void)? = nil) {
         print("Preheat oven with completion handler.")
@@ -57,6 +58,7 @@ class ViewController: UIViewController {
         
         Task {
             let dinner = await Dinner()
+            
             await dinner.cook({ () async -> Void in // implicitly async
                 await dinner.chopVegetable()
                 try? await dinner.marinateMeat()

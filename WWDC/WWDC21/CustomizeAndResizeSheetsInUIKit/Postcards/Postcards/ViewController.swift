@@ -50,7 +50,7 @@ class ViewController: UIViewController,
                 sheet.detents = [.medium(), .large()]
                 sheet.largestUndimmedDetentIdentifier =
                 PresentationHelper.sharedInstance.largestUndimmedDetentIdentifier
-                // 设置为NO，拖动不会触发展开
+                // 设置为NO，滚动到顶部 拖动不能展开
                 sheet.prefersScrollingExpandsWhenScrolledToEdge =
                 PresentationHelper.sharedInstance.prefersScrollingExpandsWhenScrolledToEdge
                 // 是否适配横屏尺寸，充满安全域

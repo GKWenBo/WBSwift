@@ -36,7 +36,7 @@ class ViewController: UIViewController {
                 throw MyError.invalidNameError
             }
             group.addTask { [unowned self] in
-                // 当 task group 中有任务取消之后，checkCancellation 会抛出一个叫做 CancellationError 的错误，这会导致腌肉任务立即结束
+                // 当 task group 中有任务取消之后，checkCancellation 会抛出一个叫做 CancellationError 的错误，这会导致任务立即结束
                 try Task.checkCancellation()
                 
                 // 或者，我们也可以像下面这样通过 isCancelled 属性检测取消状态并抛出错误：

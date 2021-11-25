@@ -84,19 +84,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         Task {
-            test()
+//            test()
             
-//            await test2()
+            await test2()
         }
     }
 
     // 传统异步方式
     func test() {
-        Forum().update(userIds: Array(0..<100))
-        Forum().update(userIds: Array(0..<100))
-        Forum().update(userIds: Array(0..<100))
-        Forum().update(userIds: Array(0..<100))
-        Forum().update(userIds: Array(0..<100))
+        for _ in 0..<5 {
+            Forum().update(userIds: Array(0..<100))
+        }
         RunLoop.main.run()
     }
     

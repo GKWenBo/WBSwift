@@ -56,9 +56,9 @@ class ViewController: UIViewController {
         
         // MARK: - 3、Unstructured task 的嵌套
         /*
-         这一节最后，我们再回过头看看刚才写的同步 main 函数。我们使用了一个嵌套的 Task 结构，外面的叫做父任务，里面的叫做子任务。
+         这一节最后，我们再回过头看看刚才写的同步 viewDidLoad 函数。我们使用了一个嵌套的 Task 结构，外面的叫做父任务，里面的叫做子任务。
 
-         当在一个 Task 中创建子任务的时候，子任务会继承父任务的优先级，因此，即便我们没有指定内层任务的优先级，它的优先级也是 .userInitiated。我们可以把 main 改成这样来观察：
+         当在一个 Task 中创建子任务的时候，子任务会继承父任务的优先级，因此，即便我们没有指定内层任务的优先级，它的优先级也是 .userInitiated。我们可以把 viewDidLoad 改成这样来观察：
          */
         Task(priority: .userInitiated) {
             print("super task")
