@@ -73,7 +73,9 @@ class ViewController: UIViewController {
         
         self.view.addSubview(titleLabel)
         
-        self.loadTodo(id: 1)
+        Task.detached {
+             self.loadTodo(id: 1)
+        }
     }
     
     /*
