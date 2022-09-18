@@ -1,4 +1,10 @@
+### WWDC20
+
+- [视觉编辑SwiftUI视图](https://developer.apple.com/wwdc20/10185)
+- [在Xcode Library中添加自定义视图](https://developer.apple.com/wwdc20/10649)
+
 ### WWDC19
+
 - [探索着色图形复杂功能](https://developer.apple.com/wwdc19/253)
 - [在iOS上实施深色模式](https://developer.apple.com/wwdc19/214)
 >[adopting_ios_dark_mode](https://developer.apple.com/documentation/uikit/appearance_customization/adopting_ios_dark_mode)
@@ -9,6 +15,13 @@
 - [掌握Xcode预览](https://developer.apple.com/wwdc19/233)
 - [利用SwiftUI构建自定视图](https://developer.apple.com/wwdc19/237)
 >[building_custom_views_in_swiftui](https://developer.apple.com/documentation/swiftui/building_custom_views_in_swiftui)
+- [良好的开发习惯](https://developer.apple.com/wwdc19/239)
+- [SwiftUI中的辅助功能](https://developer.apple.com/wwdc19/238)
+>[creating_accessible_views](https://developer.apple.com/documentation/swiftui/creating_accessible_views)
+- [所有设备上的SwiftUI](https://developer.apple.com/wwdc19/240)
+- [架构您的App以支持多窗口](https://developer.apple.com/wwdc19/258)
+- [多任务处理APP中的窗口管理](https://developer.apple.com/wwdc19/246)
+- [共享新功能](https://developer.apple.com/videos/play/tech-talks/210)
 
 ### WWDC15
 - [Safari浏览器视图控制器简介](https://developer.apple.com/wwdc15/504)
