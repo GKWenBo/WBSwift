@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,15 +12,61 @@
 		0C6C08302901461B00F0B025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C6C082F2901461B00F0B025 /* Assets.xcassets */; };
 		0C6C08332901461B00F0B025 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C6C08322901461B00F0B025 /* Preview Assets.xcassets */; };
 		0C6C083A29014F5C00F0B025 /* WBTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6C083929014F5C00F0B025 /* WBTextField.swift */; };
+		2D9873D7938D0CE3FA178FB5 /* Pods_MyWidgetExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C683864EE191ABD12968A13 /* Pods_MyWidgetExtension.framework */; };
+		C2B9F4942901873500FD2E30 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B9F4932901873500FD2E30 /* WidgetKit.framework */; };
+		C2B9F4962901873500FD2E30 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B9F4952901873500FD2E30 /* SwiftUI.framework */; };
+		C2B9F4992901873500FD2E30 /* MyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B9F4982901873500FD2E30 /* MyWidget.swift */; };
+		C2B9F49C2901873700FD2E30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2B9F49B2901873700FD2E30 /* Assets.xcassets */; };
+		C2B9F49E2901873700FD2E30 /* MyWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C2B9F49A2901873500FD2E30 /* MyWidget.intentdefinition */; };
+		C2B9F49F2901873700FD2E30 /* MyWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C2B9F49A2901873500FD2E30 /* MyWidget.intentdefinition */; };
+		C2B9F4A22901873700FD2E30 /* MyWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C2B9F4922901873500FD2E30 /* MyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E519BBC73FCE1F653A4CE846 /* Pods_WBAnimatedSwiftUIViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6242AF1E3EED321920F6506D /* Pods_WBAnimatedSwiftUIViewDemo.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C2B9F4A02901873700FD2E30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C6C08202901461500F0B025 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C2B9F4912901873500FD2E30;
+			remoteInfo = MyWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C2B9F4A32901873700FD2E30 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C2B9F4A22901873700FD2E30 /* MyWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		0C683864EE191ABD12968A13 /* Pods_MyWidgetExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWidgetExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C6C08282901461500F0B025 /* WBAnimatedSwiftUIViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBAnimatedSwiftUIViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C6C082B2901461500F0B025 /* WBAnimatedSwiftUIViewDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBAnimatedSwiftUIViewDemoApp.swift; sourceTree = "<group>"; };
 		0C6C082D2901461500F0B025 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0C6C082F2901461B00F0B025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C6C08322901461B00F0B025 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0C6C083929014F5C00F0B025 /* WBTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBTextField.swift; sourceTree = "<group>"; };
+		3A4C96DC94EB8C5F1BE67D30 /* Pods-MyWidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-MyWidgetExtension/Pods-MyWidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		6242AF1E3EED321920F6506D /* Pods_WBAnimatedSwiftUIViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WBAnimatedSwiftUIViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7307797804540F57145AAD61 /* Pods-MyWidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-MyWidgetExtension/Pods-MyWidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
+		8F800552BFF305C8B3F7A96B /* Pods-WBAnimatedSwiftUIViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBAnimatedSwiftUIViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-WBAnimatedSwiftUIViewDemo/Pods-WBAnimatedSwiftUIViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C2B9F4922901873500FD2E30 /* MyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2B9F4932901873500FD2E30 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C2B9F4952901873500FD2E30 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C2B9F4982901873500FD2E30 /* MyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyWidget.swift; sourceTree = "<group>"; };
+		C2B9F49A2901873500FD2E30 /* MyWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = MyWidget.intentdefinition; sourceTree = "<group>"; };
+		C2B9F49B2901873700FD2E30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2B9F49D2901873700FD2E30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F725D779F0E938D2CE9B1843 /* Pods-WBAnimatedSwiftUIViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBAnimatedSwiftUIViewDemo.release.xcconfig"; path = "Target Support Files/Pods-WBAnimatedSwiftUIViewDemo/Pods-WBAnimatedSwiftUIViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +74,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E519BBC73FCE1F653A4CE846 /* Pods_WBAnimatedSwiftUIViewDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2B9F48F2901873500FD2E30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B9F4962901873500FD2E30 /* SwiftUI.framework in Frameworks */,
+				C2B9F4942901873500FD2E30 /* WidgetKit.framework in Frameworks */,
+				2D9873D7938D0CE3FA178FB5 /* Pods_MyWidgetExtension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,7 +95,10 @@
 			isa = PBXGroup;
 			children = (
 				0C6C082A2901461500F0B025 /* WBAnimatedSwiftUIViewDemo */,
+				C2B9F4972901873500FD2E30 /* MyWidget */,
 				0C6C08292901461500F0B025 /* Products */,
+				B329DE87AF8A573CA36381D3 /* Pods */,
+				47428A41FF168583CBA872E8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				0C6C08282901461500F0B025 /* WBAnimatedSwiftUIViewDemo.app */,
+				C2B9F4922901873500FD2E30 /* MyWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +131,39 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		47428A41FF168583CBA872E8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6242AF1E3EED321920F6506D /* Pods_WBAnimatedSwiftUIViewDemo.framework */,
+				C2B9F4932901873500FD2E30 /* WidgetKit.framework */,
+				C2B9F4952901873500FD2E30 /* SwiftUI.framework */,
+				0C683864EE191ABD12968A13 /* Pods_MyWidgetExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B329DE87AF8A573CA36381D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F800552BFF305C8B3F7A96B /* Pods-WBAnimatedSwiftUIViewDemo.debug.xcconfig */,
+				F725D779F0E938D2CE9B1843 /* Pods-WBAnimatedSwiftUIViewDemo.release.xcconfig */,
+				3A4C96DC94EB8C5F1BE67D30 /* Pods-MyWidgetExtension.debug.xcconfig */,
+				7307797804540F57145AAD61 /* Pods-MyWidgetExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C2B9F4972901873500FD2E30 /* MyWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C2B9F4982901873500FD2E30 /* MyWidget.swift */,
+				C2B9F49A2901873500FD2E30 /* MyWidget.intentdefinition */,
+				C2B9F49B2901873700FD2E30 /* Assets.xcassets */,
+				C2B9F49D2901873700FD2E30 /* Info.plist */,
+			);
+			path = MyWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,18 +171,40 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C6C08362901461B00F0B025 /* Build configuration list for PBXNativeTarget "WBAnimatedSwiftUIViewDemo" */;
 			buildPhases = (
+				6364C3F7192AD065028E41E9 /* [CP] Check Pods Manifest.lock */,
 				0C6C08242901461500F0B025 /* Sources */,
 				0C6C08252901461500F0B025 /* Frameworks */,
 				0C6C08262901461500F0B025 /* Resources */,
+				C2B9F4A32901873700FD2E30 /* Embed Foundation Extensions */,
+				8B5BE652E7152C00FAD5BEA5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C2B9F4A12901873700FD2E30 /* PBXTargetDependency */,
 			);
 			name = WBAnimatedSwiftUIViewDemo;
 			productName = WBAnimatedSwiftUIViewDemo;
 			productReference = 0C6C08282901461500F0B025 /* WBAnimatedSwiftUIViewDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		C2B9F4912901873500FD2E30 /* MyWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2B9F4A62901873700FD2E30 /* Build configuration list for PBXNativeTarget "MyWidgetExtension" */;
+			buildPhases = (
+				AC5CFF7AD9DEB58E1E4011D2 /* [CP] Check Pods Manifest.lock */,
+				C2B9F48E2901873500FD2E30 /* Sources */,
+				C2B9F48F2901873500FD2E30 /* Frameworks */,
+				C2B9F4902901873500FD2E30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyWidgetExtension;
+			productName = MyWidgetExtension;
+			productReference = C2B9F4922901873500FD2E30 /* MyWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,16 +213,19 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1410;
+				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
 					0C6C08272901461500F0B025 = {
 						CreatedOnToolsVersion = 14.1;
 					};
+					C2B9F4912901873500FD2E30 = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
 				};
 			};
 			buildConfigurationList = 0C6C08232901461500F0B025 /* Build configuration list for PBXProject "WBAnimatedSwiftUIViewDemo" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -119,6 +238,7 @@
 			projectRoot = "";
 			targets = (
 				0C6C08272901461500F0B025 /* WBAnimatedSwiftUIViewDemo */,
+				C2B9F4912901873500FD2E30 /* MyWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -133,20 +253,110 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C2B9F4902901873500FD2E30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B9F49C2901873700FD2E30 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6364C3F7192AD065028E41E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WBAnimatedSwiftUIViewDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B5BE652E7152C00FAD5BEA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WBAnimatedSwiftUIViewDemo/Pods-WBAnimatedSwiftUIViewDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WBAnimatedSwiftUIViewDemo/Pods-WBAnimatedSwiftUIViewDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WBAnimatedSwiftUIViewDemo/Pods-WBAnimatedSwiftUIViewDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC5CFF7AD9DEB58E1E4011D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyWidgetExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0C6C08242901461500F0B025 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2B9F49F2901873700FD2E30 /* MyWidget.intentdefinition in Sources */,
 				0C6C082E2901461500F0B025 /* ContentView.swift in Sources */,
 				0C6C082C2901461500F0B025 /* WBAnimatedSwiftUIViewDemoApp.swift in Sources */,
 				0C6C083A29014F5C00F0B025 /* WBTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C2B9F48E2901873500FD2E30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2B9F49E2901873700FD2E30 /* MyWidget.intentdefinition in Sources */,
+				C2B9F4992901873500FD2E30 /* MyWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C2B9F4A12901873700FD2E30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C2B9F4912901873500FD2E30 /* MyWidgetExtension */;
+			targetProxy = C2B9F4A02901873700FD2E30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		0C6C08342901461B00F0B025 /* Debug */ = {
@@ -265,6 +475,7 @@
 		};
 		0C6C08372901461B00F0B025 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F800552BFF305C8B3F7A96B /* Pods-WBAnimatedSwiftUIViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -278,6 +489,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -293,6 +505,7 @@
 		};
 		0C6C08382901461B00F0B025 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F725D779F0E938D2CE9B1843 /* Pods-WBAnimatedSwiftUIViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -306,6 +519,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,6 +527,62 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = wb.WBAnimatedSwiftUIViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C2B9F4A42901873700FD2E30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A4C96DC94EB8C5F1BE67D30 /* Pods-MyWidgetExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wb.WBAnimatedSwiftUIViewDemo.MyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C2B9F4A52901873700FD2E30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7307797804540F57145AAD61 /* Pods-MyWidgetExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MyWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = wb.WBAnimatedSwiftUIViewDemo.MyWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -336,6 +606,15 @@
 			buildConfigurations = (
 				0C6C08372901461B00F0B025 /* Debug */,
 				0C6C08382901461B00F0B025 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2B9F4A62901873700FD2E30 /* Build configuration list for PBXNativeTarget "MyWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2B9F4A42901873700FD2E30 /* Debug */,
+				C2B9F4A52901873700FD2E30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

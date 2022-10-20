@@ -1,0 +1,26 @@
+PODS:
+  - FLAnimatedImage (1.0.17)
+  - SDWebImage (5.12.5):
+    - SDWebImage/Core (= 5.12.5)
+  - SDWebImage/Core (5.12.5)
+  - SDWebImageSwiftUI (2.2.1):
+    - SDWebImage (~> 5.10)
+
+DEPENDENCIES:
+  - FLAnimatedImage
+  - SDWebImageSwiftUI
+
+SPEC REPOS:
+  trunk:
+    - FLAnimatedImage
+    - SDWebImage
+    - SDWebImageSwiftUI
+
+SPEC CHECKSUMS:
+  FLAnimatedImage: bbf914596368867157cc71b38a8ec834b3eeb32b
+  SDWebImage: 0905f1b7760fc8ac4198cae0036600d67478751e
+  SDWebImageSwiftUI: 2ecf5ab6f574526326b10ecb155e72a88059d0f0
+
+PODFILE CHECKSUM: 4453fa4435433af223b2689beba1272f7f720e88
+
+COCOAPODS: 1.11.2

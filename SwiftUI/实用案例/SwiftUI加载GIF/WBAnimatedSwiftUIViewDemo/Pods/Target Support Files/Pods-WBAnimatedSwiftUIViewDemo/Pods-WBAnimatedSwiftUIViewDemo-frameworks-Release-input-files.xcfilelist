@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-WBAnimatedSwiftUIViewDemo/Pods-WBAnimatedSwiftUIViewDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/SDWebImageSwiftUI/SDWebImageSwiftUI.framework
