@@ -20,6 +20,9 @@
 		C2B9F49E2901873700FD2E30 /* MyWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C2B9F49A2901873500FD2E30 /* MyWidget.intentdefinition */; };
 		C2B9F49F2901873700FD2E30 /* MyWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C2B9F49A2901873500FD2E30 /* MyWidget.intentdefinition */; };
 		C2B9F4A22901873700FD2E30 /* MyWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C2B9F4922901873500FD2E30 /* MyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C2B9F4A829018FC500FD2E30 /* FLAnimatedImageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B9F4A729018FC500FD2E30 /* FLAnimatedImageTest.swift */; };
+		C2B9F4AA2901904A00FD2E30 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = C2B9F4A92901904A00FD2E30 /* test.gif */; };
+		C2B9F4AB2901904A00FD2E30 /* test.gif in Resources */ = {isa = PBXBuildFile; fileRef = C2B9F4A92901904A00FD2E30 /* test.gif */; };
 		E519BBC73FCE1F653A4CE846 /* Pods_WBAnimatedSwiftUIViewDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6242AF1E3EED321920F6506D /* Pods_WBAnimatedSwiftUIViewDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +69,8 @@
 		C2B9F49A2901873500FD2E30 /* MyWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = MyWidget.intentdefinition; sourceTree = "<group>"; };
 		C2B9F49B2901873700FD2E30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2B9F49D2901873700FD2E30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2B9F4A729018FC500FD2E30 /* FLAnimatedImageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FLAnimatedImageTest.swift; sourceTree = "<group>"; };
+		C2B9F4A92901904A00FD2E30 /* test.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = test.gif; sourceTree = "<group>"; };
 		F725D779F0E938D2CE9B1843 /* Pods-WBAnimatedSwiftUIViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBAnimatedSwiftUIViewDemo.release.xcconfig"; path = "Target Support Files/Pods-WBAnimatedSwiftUIViewDemo/Pods-WBAnimatedSwiftUIViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -117,6 +122,8 @@
 				0C6C082B2901461500F0B025 /* WBAnimatedSwiftUIViewDemoApp.swift */,
 				0C6C082D2901461500F0B025 /* ContentView.swift */,
 				0C6C083929014F5C00F0B025 /* WBTextField.swift */,
+				C2B9F4A729018FC500FD2E30 /* FLAnimatedImageTest.swift */,
+				C2B9F4A92901904A00FD2E30 /* test.gif */,
 				0C6C082F2901461B00F0B025 /* Assets.xcassets */,
 				0C6C08312901461B00F0B025 /* Preview Content */,
 			);
@@ -249,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C6C08332901461B00F0B025 /* Preview Assets.xcassets in Resources */,
+				C2B9F4AA2901904A00FD2E30 /* test.gif in Resources */,
 				0C6C08302901461B00F0B025 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +265,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2B9F4AB2901904A00FD2E30 /* test.gif in Resources */,
 				C2B9F49C2901873700FD2E30 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +342,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2B9F49F2901873700FD2E30 /* MyWidget.intentdefinition in Sources */,
+				C2B9F4A829018FC500FD2E30 /* FLAnimatedImageTest.swift in Sources */,
 				0C6C082E2901461500F0B025 /* ContentView.swift in Sources */,
 				0C6C082C2901461500F0B025 /* WBAnimatedSwiftUIViewDemoApp.swift in Sources */,
 				0C6C083A29014F5C00F0B025 /* WBTextField.swift in Sources */,
