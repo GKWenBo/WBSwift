@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C2213CE29028FF900186A6C /* SDWebImageSwiftUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2213CD29028FF900186A6C /* SDWebImageSwiftUITest.swift */; };
+		0C2213CF2902962C00186A6C /* FLAnimatedImageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B9F4A729018FC500FD2E30 /* FLAnimatedImageTest.swift */; };
+		0C2213D22902A09800186A6C /* WBAnimatedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2213D12902A09800186A6C /* WBAnimatedImage.swift */; };
+		0C2213D32902A09800186A6C /* WBAnimatedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2213D12902A09800186A6C /* WBAnimatedImage.swift */; };
 		0C6C082C2901461500F0B025 /* WBAnimatedSwiftUIViewDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6C082B2901461500F0B025 /* WBAnimatedSwiftUIViewDemoApp.swift */; };
 		0C6C082E2901461500F0B025 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6C082D2901461500F0B025 /* ContentView.swift */; };
 		0C6C08302901461B00F0B025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C6C082F2901461B00F0B025 /* Assets.xcassets */; };
@@ -51,6 +55,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0C2213CD29028FF900186A6C /* SDWebImageSwiftUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SDWebImageSwiftUITest.swift; sourceTree = "<group>"; };
+		0C2213D12902A09800186A6C /* WBAnimatedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBAnimatedImage.swift; sourceTree = "<group>"; };
 		0C683864EE191ABD12968A13 /* Pods_MyWidgetExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyWidgetExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C6C08282901461500F0B025 /* WBAnimatedSwiftUIViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBAnimatedSwiftUIViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C6C082B2901461500F0B025 /* WBAnimatedSwiftUIViewDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBAnimatedSwiftUIViewDemoApp.swift; sourceTree = "<group>"; };
@@ -96,6 +102,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C2213D029029D6E00186A6C /* WBAnimatedImageView */ = {
+			isa = PBXGroup;
+			children = (
+				0C2213D12902A09800186A6C /* WBAnimatedImage.swift */,
+			);
+			path = WBAnimatedImageView;
+			sourceTree = "<group>";
+		};
 		0C6C081F2901461500F0B025 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +137,7 @@
 				0C6C082D2901461500F0B025 /* ContentView.swift */,
 				0C6C083929014F5C00F0B025 /* WBTextField.swift */,
 				C2B9F4A729018FC500FD2E30 /* FLAnimatedImageTest.swift */,
+				0C2213CD29028FF900186A6C /* SDWebImageSwiftUITest.swift */,
 				C2B9F4A92901904A00FD2E30 /* test.gif */,
 				0C6C082F2901461B00F0B025 /* Assets.xcassets */,
 				0C6C08312901461B00F0B025 /* Preview Content */,
@@ -163,6 +178,7 @@
 		C2B9F4972901873500FD2E30 /* MyWidget */ = {
 			isa = PBXGroup;
 			children = (
+				0C2213D029029D6E00186A6C /* WBAnimatedImageView */,
 				C2B9F4982901873500FD2E30 /* MyWidget.swift */,
 				C2B9F49A2901873500FD2E30 /* MyWidget.intentdefinition */,
 				C2B9F49B2901873700FD2E30 /* Assets.xcassets */,
@@ -342,8 +358,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2B9F49F2901873700FD2E30 /* MyWidget.intentdefinition in Sources */,
+				0C2213CE29028FF900186A6C /* SDWebImageSwiftUITest.swift in Sources */,
 				C2B9F4A829018FC500FD2E30 /* FLAnimatedImageTest.swift in Sources */,
 				0C6C082E2901461500F0B025 /* ContentView.swift in Sources */,
+				0C2213D22902A09800186A6C /* WBAnimatedImage.swift in Sources */,
 				0C6C082C2901461500F0B025 /* WBAnimatedSwiftUIViewDemoApp.swift in Sources */,
 				0C6C083A29014F5C00F0B025 /* WBTextField.swift in Sources */,
 			);
@@ -355,6 +373,8 @@
 			files = (
 				C2B9F49E2901873700FD2E30 /* MyWidget.intentdefinition in Sources */,
 				C2B9F4992901873500FD2E30 /* MyWidget.swift in Sources */,
+				0C2213CF2902962C00186A6C /* FLAnimatedImageTest.swift in Sources */,
+				0C2213D32902A09800186A6C /* WBAnimatedImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
