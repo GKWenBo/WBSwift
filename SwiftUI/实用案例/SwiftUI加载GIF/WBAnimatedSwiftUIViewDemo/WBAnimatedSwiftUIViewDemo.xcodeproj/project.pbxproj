@@ -16,6 +16,8 @@
 		0C6C08302901461B00F0B025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C6C082F2901461B00F0B025 /* Assets.xcassets */; };
 		0C6C08332901461B00F0B025 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C6C08322901461B00F0B025 /* Preview Assets.xcassets */; };
 		0C6C083A29014F5C00F0B025 /* WBTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6C083929014F5C00F0B025 /* WBTextField.swift */; };
+		0CE7C2A72902C1F10050F121 /* WBAnimatedImagePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE7C2A62902C1F10050F121 /* WBAnimatedImagePlayer.swift */; };
+		0CE7C2A82902C1F10050F121 /* WBAnimatedImagePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE7C2A62902C1F10050F121 /* WBAnimatedImagePlayer.swift */; };
 		2D9873D7938D0CE3FA178FB5 /* Pods_MyWidgetExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C683864EE191ABD12968A13 /* Pods_MyWidgetExtension.framework */; };
 		C2B9F4942901873500FD2E30 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B9F4932901873500FD2E30 /* WidgetKit.framework */; };
 		C2B9F4962901873500FD2E30 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B9F4952901873500FD2E30 /* SwiftUI.framework */; };
@@ -64,6 +66,7 @@
 		0C6C082F2901461B00F0B025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C6C08322901461B00F0B025 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0C6C083929014F5C00F0B025 /* WBTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBTextField.swift; sourceTree = "<group>"; };
+		0CE7C2A62902C1F10050F121 /* WBAnimatedImagePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBAnimatedImagePlayer.swift; sourceTree = "<group>"; };
 		3A4C96DC94EB8C5F1BE67D30 /* Pods-MyWidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-MyWidgetExtension/Pods-MyWidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		6242AF1E3EED321920F6506D /* Pods_WBAnimatedSwiftUIViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WBAnimatedSwiftUIViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7307797804540F57145AAD61 /* Pods-MyWidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-MyWidgetExtension/Pods-MyWidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				0C2213D12902A09800186A6C /* WBAnimatedImage.swift */,
+				0CE7C2A62902C1F10050F121 /* WBAnimatedImagePlayer.swift */,
 			);
 			path = WBAnimatedImageView;
 			sourceTree = "<group>";
@@ -359,6 +363,7 @@
 			files = (
 				C2B9F49F2901873700FD2E30 /* MyWidget.intentdefinition in Sources */,
 				0C2213CE29028FF900186A6C /* SDWebImageSwiftUITest.swift in Sources */,
+				0CE7C2A72902C1F10050F121 /* WBAnimatedImagePlayer.swift in Sources */,
 				C2B9F4A829018FC500FD2E30 /* FLAnimatedImageTest.swift in Sources */,
 				0C6C082E2901461500F0B025 /* ContentView.swift in Sources */,
 				0C2213D22902A09800186A6C /* WBAnimatedImage.swift in Sources */,
@@ -375,6 +380,7 @@
 				C2B9F4992901873500FD2E30 /* MyWidget.swift in Sources */,
 				0C2213CF2902962C00186A6C /* FLAnimatedImageTest.swift in Sources */,
 				0C2213D32902A09800186A6C /* WBAnimatedImage.swift in Sources */,
+				0CE7C2A82902C1F10050F121 /* WBAnimatedImagePlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
