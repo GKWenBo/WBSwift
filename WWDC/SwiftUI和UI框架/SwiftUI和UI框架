@@ -1,7 +1,21 @@
 ### WWDC20
 
+#### SwiftUI
+
 - [视觉编辑SwiftUI视图](https://developer.apple.com/wwdc20/10185)
 - [在Xcode Library中添加自定义视图](https://developer.apple.com/wwdc20/10649)
+- [SwiftUI新功能](https://developer.apple.com/wwdc20/10041)
+- [SwiftUI中的APP要领](https://developer.apple.com/wwdc20/10037)
+- [在SwiftUI内构建基于文档的app](https://developer.apple.com/wwdc20/10039)
+- [SwiftUI中的叠放、网格和大纲](https://developer.apple.com/wwdc20/10031)
+
+#### Widget
+
+- [为小组件添加配置和智能](https://developer.apple.com/wwdc20/10194)
+
+#### UICollectionView
+
+- [差量数据源的改进](https://developer.apple.com/wwdc20/10045)
 
 ### WWDC19
 
