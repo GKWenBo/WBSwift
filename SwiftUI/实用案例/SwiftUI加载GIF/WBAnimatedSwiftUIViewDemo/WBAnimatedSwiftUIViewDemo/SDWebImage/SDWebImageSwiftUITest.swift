@@ -5,6 +5,10 @@
 //  Created by wenbo22 on 2022/10/21.
 //
 
+/*
+ SDWebImage加载GIF图片 demo
+ */
+
 import SwiftUI
 import SDWebImageSwiftUI
 

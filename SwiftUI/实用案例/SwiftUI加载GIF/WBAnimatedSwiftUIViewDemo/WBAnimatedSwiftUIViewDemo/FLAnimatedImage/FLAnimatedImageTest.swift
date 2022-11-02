@@ -5,6 +5,10 @@
 //  Created by WENBO on 2022/10/20.
 //
 
+/*
+ FLAnimatedImage加载GIF图片 demo
+ */
+
 import SwiftUI
 import FLAnimatedImage
 

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0C2213CE29028FF900186A6C /* SDWebImageSwiftUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2213CD29028FF900186A6C /* SDWebImageSwiftUITest.swift */; };
-		0C2213CF2902962C00186A6C /* FLAnimatedImageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B9F4A729018FC500FD2E30 /* FLAnimatedImageTest.swift */; };
 		0C2213D22902A09800186A6C /* WBAnimatedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2213D12902A09800186A6C /* WBAnimatedImage.swift */; };
 		0C2213D32902A09800186A6C /* WBAnimatedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2213D12902A09800186A6C /* WBAnimatedImage.swift */; };
 		0C6C082C2901461500F0B025 /* WBAnimatedSwiftUIViewDemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6C082B2901461500F0B025 /* WBAnimatedSwiftUIViewDemoApp.swift */; };
@@ -16,6 +15,10 @@
 		0C6C08302901461B00F0B025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C6C082F2901461B00F0B025 /* Assets.xcassets */; };
 		0C6C08332901461B00F0B025 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C6C08322901461B00F0B025 /* Preview Assets.xcassets */; };
 		0C6C083A29014F5C00F0B025 /* WBTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6C083929014F5C00F0B025 /* WBTextField.swift */; };
+		0CBAE56329126C1E00F20688 /* CustomPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBAE56229126C1E00F20688 /* CustomPlayView.swift */; };
+		0CBAE56529126C4100F20688 /* CustomPlayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBAE56429126C4100F20688 /* CustomPlayModel.swift */; };
+		0CBAE5662912733400F20688 /* CustomPlayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBAE56429126C4100F20688 /* CustomPlayModel.swift */; };
+		0CBAE5692912882D00F20688 /* AnimatedWidgetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBAE5682912882C00F20688 /* AnimatedWidgetModel.swift */; };
 		0CE7C2A72902C1F10050F121 /* WBAnimatedImagePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE7C2A62902C1F10050F121 /* WBAnimatedImagePlayer.swift */; };
 		0CE7C2A82902C1F10050F121 /* WBAnimatedImagePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE7C2A62902C1F10050F121 /* WBAnimatedImagePlayer.swift */; };
 		2D9873D7938D0CE3FA178FB5 /* Pods_MyWidgetExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C683864EE191ABD12968A13 /* Pods_MyWidgetExtension.framework */; };
@@ -66,6 +69,9 @@
 		0C6C082F2901461B00F0B025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C6C08322901461B00F0B025 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0C6C083929014F5C00F0B025 /* WBTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBTextField.swift; sourceTree = "<group>"; };
+		0CBAE56229126C1E00F20688 /* CustomPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPlayView.swift; sourceTree = "<group>"; };
+		0CBAE56429126C4100F20688 /* CustomPlayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPlayModel.swift; sourceTree = "<group>"; };
+		0CBAE5682912882C00F20688 /* AnimatedWidgetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedWidgetModel.swift; sourceTree = "<group>"; };
 		0CE7C2A62902C1F10050F121 /* WBAnimatedImagePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBAnimatedImagePlayer.swift; sourceTree = "<group>"; };
 		3A4C96DC94EB8C5F1BE67D30 /* Pods-MyWidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyWidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-MyWidgetExtension/Pods-MyWidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
 		6242AF1E3EED321920F6506D /* Pods_WBAnimatedSwiftUIViewDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WBAnimatedSwiftUIViewDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,11 +143,12 @@
 		0C6C082A2901461500F0B025 /* WBAnimatedSwiftUIViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0CBAE56129126BF100F20688 /* CustomPlay */,
+				0CBAE56029126BD700F20688 /* SDWebImage */,
+				0CBAE55F29126BBB00F20688 /* FLAnimatedImage */,
 				0C6C082B2901461500F0B025 /* WBAnimatedSwiftUIViewDemoApp.swift */,
 				0C6C082D2901461500F0B025 /* ContentView.swift */,
-				0C6C083929014F5C00F0B025 /* WBTextField.swift */,
-				C2B9F4A729018FC500FD2E30 /* FLAnimatedImageTest.swift */,
-				0C2213CD29028FF900186A6C /* SDWebImageSwiftUITest.swift */,
+				0CBAE55E29126B8700F20688 /* UIKit */,
 				C2B9F4A92901904A00FD2E30 /* test.gif */,
 				0C6C082F2901461B00F0B025 /* Assets.xcassets */,
 				0C6C08312901461B00F0B025 /* Preview Content */,
@@ -155,6 +162,49 @@
 				0C6C08322901461B00F0B025 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0CBAE55E29126B8700F20688 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				0C6C083929014F5C00F0B025 /* WBTextField.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		0CBAE55F29126BBB00F20688 /* FLAnimatedImage */ = {
+			isa = PBXGroup;
+			children = (
+				C2B9F4A729018FC500FD2E30 /* FLAnimatedImageTest.swift */,
+			);
+			path = FLAnimatedImage;
+			sourceTree = "<group>";
+		};
+		0CBAE56029126BD700F20688 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				0C2213CD29028FF900186A6C /* SDWebImageSwiftUITest.swift */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		0CBAE56129126BF100F20688 /* CustomPlay */ = {
+			isa = PBXGroup;
+			children = (
+				0CBAE56229126C1E00F20688 /* CustomPlayView.swift */,
+				0CBAE56429126C4100F20688 /* CustomPlayModel.swift */,
+			);
+			path = CustomPlay;
+			sourceTree = "<group>";
+		};
+		0CBAE5672912880100F20688 /* AnimatedWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C2B9F4982901873500FD2E30 /* MyWidget.swift */,
+				0CBAE5682912882C00F20688 /* AnimatedWidgetModel.swift */,
+				C2B9F49A2901873500FD2E30 /* MyWidget.intentdefinition */,
+			);
+			path = AnimatedWidget;
 			sourceTree = "<group>";
 		};
 		47428A41FF168583CBA872E8 /* Frameworks */ = {
@@ -183,8 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				0C2213D029029D6E00186A6C /* WBAnimatedImageView */,
-				C2B9F4982901873500FD2E30 /* MyWidget.swift */,
-				C2B9F49A2901873500FD2E30 /* MyWidget.intentdefinition */,
+				0CBAE5672912880100F20688 /* AnimatedWidget */,
 				C2B9F49B2901873700FD2E30 /* Assets.xcassets */,
 				C2B9F49D2901873700FD2E30 /* Info.plist */,
 			);
@@ -361,6 +410,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CBAE56529126C4100F20688 /* CustomPlayModel.swift in Sources */,
 				C2B9F49F2901873700FD2E30 /* MyWidget.intentdefinition in Sources */,
 				0C2213CE29028FF900186A6C /* SDWebImageSwiftUITest.swift in Sources */,
 				0CE7C2A72902C1F10050F121 /* WBAnimatedImagePlayer.swift in Sources */,
@@ -369,6 +419,7 @@
 				0C2213D22902A09800186A6C /* WBAnimatedImage.swift in Sources */,
 				0C6C082C2901461500F0B025 /* WBAnimatedSwiftUIViewDemoApp.swift in Sources */,
 				0C6C083A29014F5C00F0B025 /* WBTextField.swift in Sources */,
+				0CBAE56329126C1E00F20688 /* CustomPlayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,9 +427,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CBAE5662912733400F20688 /* CustomPlayModel.swift in Sources */,
 				C2B9F49E2901873700FD2E30 /* MyWidget.intentdefinition in Sources */,
+				0CBAE5692912882D00F20688 /* AnimatedWidgetModel.swift in Sources */,
 				C2B9F4992901873500FD2E30 /* MyWidget.swift in Sources */,
-				0C2213CF2902962C00186A6C /* FLAnimatedImageTest.swift in Sources */,
 				0C2213D32902A09800186A6C /* WBAnimatedImage.swift in Sources */,
 				0CE7C2A82902C1F10050F121 /* WBAnimatedImagePlayer.swift in Sources */,
 			);

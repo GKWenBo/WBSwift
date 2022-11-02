@@ -14,10 +14,10 @@ struct WBAnimatedImage {
     let images: [UIImage]
     let duration: TimeInterval
     
+    // MARK: - init
     init?(_ data: Data) {
         var girDuration = 0.0
         var tempImages: [UIImage] = []
-        
         let info: [String: Any] = [kCGImageSourceShouldCache as String: true,
                                    kCGImageSourceTypeIdentifierHint as String: kUTTypeGIF]
         

@@ -41,10 +41,22 @@ struct SimpleEntry: TimelineEntry {
 }
 
 struct MyWidgetEntryView : View {
-    var entry: Provider.Entry
-
     var body: some View {
-        Text(entry.date, style: .time)
+        ZStack {
+            if let image = AnimatedWidgetModel.default.image {
+                Image(uiImage: image)
+            }
+        }
+        .onAppear {
+            tick()
+        }
+    }
+    
+    func tick() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            WidgetCenter.shared.reloadAllTimelines()
+            tick()
+        }
     }
 }
 
@@ -54,7 +66,7 @@ struct MyWidget: Widget {
 
     var body: some WidgetConfiguration {
         IntentConfiguration(kind: kind, intent: ConfigurationIntent.self, provider: Provider()) { entry in
-            MyWidgetEntryView(entry: entry)
+            MyWidgetEntryView()
         }
         .configurationDisplayName("My Widget")
         .description("This is an example widget.")
@@ -63,7 +75,7 @@ struct MyWidget: Widget {
 
 struct MyWidget_Previews: PreviewProvider {
     static var previews: some View {
-        MyWidgetEntryView(entry: SimpleEntry(date: Date(), configuration: ConfigurationIntent()))
+        MyWidgetEntryView()
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

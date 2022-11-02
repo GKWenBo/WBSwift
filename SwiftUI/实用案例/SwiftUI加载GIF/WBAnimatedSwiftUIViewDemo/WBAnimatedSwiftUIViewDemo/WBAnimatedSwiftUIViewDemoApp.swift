@@ -11,7 +11,8 @@ import SwiftUI
 struct WBAnimatedSwiftUIViewDemoApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            CustomPlayView()
         }
     }
 }
