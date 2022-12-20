@@ -2,6 +2,10 @@
 
 ### WWDC21
 
+#### TextKit
+
+- [认识TextKit2](https://developer.apple.com/wwdc21/10061)
+
 #### Create ML
 
 - [探索SoundAnalysis中的内置声音分类](https://developer.apple.com/wwdc21/10036)
@@ -15,6 +19,8 @@
 - [打造SwiftUI中的搜索体验](https://developer.apple.com/wwdc21/10176)
 - [向您的 SwiftUI app添加丰富图形](https://developer.apple.com/wwdc21/10021)
 - [SwiftUI中的新特性](https://developer.apple.com/wwdc21/10018)
+- [揭开SwiftUI的神秘面纱](https://developer.apple.com/wwdc21/10022)
+- [探索SwiftUI中的并发](https://developer.apple.com/wwdc21/10019)
 
 ### WatchOS
 
