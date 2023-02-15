@@ -12,11 +12,13 @@ import Combine
 let scale = UIScreen.main.bounds.width / 414
 
 struct ContentView : View {
-
+//    @State private var brain: CalculatorBrain = .left("0")
+    @ObservedObject var model = CalculatorModel()
+    
     var body: some View {
         VStack(spacing: 12) {
             Spacer()
-            Text("0")
+            Text(model.brain.output)
                 .font(.system(size: 76))
                 .minimumScaleFactor(0.5)
                 .padding(.trailing, 24 * scale)
@@ -24,7 +26,7 @@ struct ContentView : View {
                     minWidth: 0,
                     maxWidth: .infinity,
                     alignment: .trailing)
-            CalculatorButtonPad()
+            CalculatorButtonPad(brain: $model.brain)
                 .padding(.bottom)
         }
     }
@@ -63,6 +65,8 @@ struct CalculatorButton : View {
 
 struct CalculatorButtonRow : View {
     let row: [CalculatorButtonItem]
+    @Binding var brain: CalculatorBrain
+    
     var body: some View {
         HStack {
             ForEach(row, id: \.self) { item in
@@ -73,6 +77,7 @@ struct CalculatorButtonRow : View {
                     foregroundColor: item.foregroundColor)
                 {
                     print("Button: \(item.title)")
+                    self.brain = self.brain.apply(item: item)
                 }
             }
         }
@@ -80,6 +85,7 @@ struct CalculatorButtonRow : View {
 }
 
 struct CalculatorButtonPad: View {
+    @Binding var brain: CalculatorBrain
     let pad: [[CalculatorButtonItem]] = [
         [.command(.clear), .command(.flip),
          .command(.percent), .op(.divide)],
@@ -92,7 +98,7 @@ struct CalculatorButtonPad: View {
     var body: some View {
         VStack(spacing: 8) {
             ForEach(pad, id: \.self) { row in
-                CalculatorButtonRow(row: row)
+                CalculatorButtonRow(row: row, brain: $brain)
             }
         }
     }
