@@ -15,9 +15,21 @@ struct ContentView : View {
 //    @State private var brain: CalculatorBrain = .left("0")
     @ObservedObject var model = CalculatorModel()
     
+    @State private var editingHistory = false
+    
+    @State private var showingResult = false
+    
     var body: some View {
         VStack(spacing: 12) {
             Spacer()
+            Button("操作履历:\(model.history.count)") {
+                print(model.history)
+                editingHistory = true
+            }
+            .sheet(isPresented: $editingHistory) {
+                HistoryView(model: model)
+            }
+            
             Text(model.brain.output)
                 .font(.system(size: 76))
                 .minimumScaleFactor(0.5)
@@ -26,7 +38,15 @@ struct ContentView : View {
                     minWidth: 0,
                     maxWidth: .infinity,
                     alignment: .trailing)
-            CalculatorButtonPad(brain: $model.brain)
+                .onTapGesture {
+                    showingResult = true
+                }
+                .alert(isPresented: $showingResult) {
+                    Alert(title: Text(model.brain.output), primaryButton: .default(Text("Copy"), action: {
+                        print("copy")
+                    }), secondaryButton: .cancel())
+                }
+            CalculatorButtonPad(model: model)
                 .padding(.bottom)
         }
     }
@@ -65,7 +85,9 @@ struct CalculatorButton : View {
 
 struct CalculatorButtonRow : View {
     let row: [CalculatorButtonItem]
-    @Binding var brain: CalculatorBrain
+//    @Binding var brain: CalculatorBrain
+    
+    var model: CalculatorModel
     
     var body: some View {
         HStack {
@@ -77,7 +99,8 @@ struct CalculatorButtonRow : View {
                     foregroundColor: item.foregroundColor)
                 {
                     print("Button: \(item.title)")
-                    self.brain = self.brain.apply(item: item)
+//                    self.brain = self.brain.apply(item: item)
+                    self.model.apply(item)
                 }
             }
         }
@@ -85,7 +108,10 @@ struct CalculatorButtonRow : View {
 }
 
 struct CalculatorButtonPad: View {
-    @Binding var brain: CalculatorBrain
+//    @Binding var brain: CalculatorBrain
+    
+    var model: CalculatorModel
+    
     let pad: [[CalculatorButtonItem]] = [
         [.command(.clear), .command(.flip),
          .command(.percent), .op(.divide)],
@@ -98,7 +124,7 @@ struct CalculatorButtonPad: View {
     var body: some View {
         VStack(spacing: 8) {
             ForEach(pad, id: \.self) { row in
-                CalculatorButtonRow(row: row, brain: $brain)
+                CalculatorButtonRow(row: row, model: model)
             }
         }
     }
