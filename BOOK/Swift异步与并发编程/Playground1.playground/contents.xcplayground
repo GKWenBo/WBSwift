@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='actor 模型和数据隔离'/>
+        <page name='创建异步函数'/>
+        <page name='withThrowingTaskGroup'/>
+        <page name='续体 resume'/>
+        <page name='Async getter'/>
+        <page name='异步序列AsyncSequence'/>
+        <page name='AsyncStream'/>
+        <page name='异步序列和响应式编程'/>
+    </pages>
+</playground>
