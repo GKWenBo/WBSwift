@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD3A30692C46174000E7E93E /* CodablePropertyWrapperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3A30682C46174000E7E93E /* CodablePropertyWrapperApp.swift */; };
+		FD3A306B2C46174000E7E93E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3A306A2C46174000E7E93E /* ContentView.swift */; };
+		FD3A306D2C46174100E7E93E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3A306C2C46174100E7E93E /* Assets.xcassets */; };
+		FD3A30702C46174100E7E93E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3A306F2C46174100E7E93E /* Preview Assets.xcassets */; };
+		FD3A307B2C46174100E7E93E /* CodablePropertyWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3A307A2C46174100E7E93E /* CodablePropertyWrapperTests.swift */; };
+		FD3A30852C46174100E7E93E /* CodablePropertyWrapperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3A30842C46174100E7E93E /* CodablePropertyWrapperUITests.swift */; };
+		FD3A30872C46174100E7E93E /* CodablePropertyWrapperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3A30862C46174100E7E93E /* CodablePropertyWrapperUITestsLaunchTests.swift */; };
+		FD3A30952C46177C00E7E93E /* Codable+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3A30942C46177C00E7E93E /* Codable+Ex.swift */; };
+		FD3A30972C461E8100E7E93E /* TestStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3A30962C461E8100E7E93E /* TestStruct.swift */; };
+		FD3A30992C461F8400E7E93E /* Codable+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3A30942C46177C00E7E93E /* Codable+Ex.swift */; };
+		FD3A309A2C461F8A00E7E93E /* TestStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3A30962C461E8100E7E93E /* TestStruct.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD3A30772C46174100E7E93E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD3A305D2C46173F00E7E93E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD3A30642C46174000E7E93E;
+			remoteInfo = CodablePropertyWrapper;
+		};
+		FD3A30812C46174100E7E93E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD3A305D2C46173F00E7E93E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD3A30642C46174000E7E93E;
+			remoteInfo = CodablePropertyWrapper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD3A30652C46174000E7E93E /* CodablePropertyWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodablePropertyWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD3A30682C46174000E7E93E /* CodablePropertyWrapperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodablePropertyWrapperApp.swift; sourceTree = "<group>"; };
+		FD3A306A2C46174000E7E93E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FD3A306C2C46174100E7E93E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD3A306F2C46174100E7E93E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD3A30712C46174100E7E93E /* CodablePropertyWrapper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CodablePropertyWrapper.entitlements; sourceTree = "<group>"; };
+		FD3A30762C46174100E7E93E /* CodablePropertyWrapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodablePropertyWrapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD3A307A2C46174100E7E93E /* CodablePropertyWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodablePropertyWrapperTests.swift; sourceTree = "<group>"; };
+		FD3A30802C46174100E7E93E /* CodablePropertyWrapperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodablePropertyWrapperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD3A30842C46174100E7E93E /* CodablePropertyWrapperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodablePropertyWrapperUITests.swift; sourceTree = "<group>"; };
+		FD3A30862C46174100E7E93E /* CodablePropertyWrapperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodablePropertyWrapperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FD3A30942C46177C00E7E93E /* Codable+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Codable+Ex.swift"; path = "CodablePropertyWrapper/Codable+Ex.swift"; sourceTree = SOURCE_ROOT; };
+		FD3A30962C461E8100E7E93E /* TestStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestStruct.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD3A30622C46174000E7E93E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3A30732C46174100E7E93E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3A307D2C46174100E7E93E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD3A305C2C46173F00E7E93E = {
+			isa = PBXGroup;
+			children = (
+				FD3A30672C46174000E7E93E /* CodablePropertyWrapper */,
+				FD3A30792C46174100E7E93E /* CodablePropertyWrapperTests */,
+				FD3A30832C46174100E7E93E /* CodablePropertyWrapperUITests */,
+				FD3A30662C46174000E7E93E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD3A30662C46174000E7E93E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD3A30652C46174000E7E93E /* CodablePropertyWrapper.app */,
+				FD3A30762C46174100E7E93E /* CodablePropertyWrapperTests.xctest */,
+				FD3A30802C46174100E7E93E /* CodablePropertyWrapperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD3A30672C46174000E7E93E /* CodablePropertyWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				FD3A30932C46175D00E7E93E /* Ex */,
+				FD3A30682C46174000E7E93E /* CodablePropertyWrapperApp.swift */,
+				FD3A306A2C46174000E7E93E /* ContentView.swift */,
+				FD3A306C2C46174100E7E93E /* Assets.xcassets */,
+				FD3A30712C46174100E7E93E /* CodablePropertyWrapper.entitlements */,
+				FD3A306E2C46174100E7E93E /* Preview Content */,
+				FD3A30962C461E8100E7E93E /* TestStruct.swift */,
+			);
+			path = CodablePropertyWrapper;
+			sourceTree = "<group>";
+		};
+		FD3A306E2C46174100E7E93E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FD3A306F2C46174100E7E93E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD3A30792C46174100E7E93E /* CodablePropertyWrapperTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD3A307A2C46174100E7E93E /* CodablePropertyWrapperTests.swift */,
+			);
+			path = CodablePropertyWrapperTests;
+			sourceTree = "<group>";
+		};
+		FD3A30832C46174100E7E93E /* CodablePropertyWrapperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD3A30842C46174100E7E93E /* CodablePropertyWrapperUITests.swift */,
+				FD3A30862C46174100E7E93E /* CodablePropertyWrapperUITestsLaunchTests.swift */,
+			);
+			path = CodablePropertyWrapperUITests;
+			sourceTree = "<group>";
+		};
+		FD3A30932C46175D00E7E93E /* Ex */ = {
+			isa = PBXGroup;
+			children = (
+				FD3A30942C46177C00E7E93E /* Codable+Ex.swift */,
+			);
+			path = Ex;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD3A30642C46174000E7E93E /* CodablePropertyWrapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD3A308A2C46174100E7E93E /* Build configuration list for PBXNativeTarget "CodablePropertyWrapper" */;
+			buildPhases = (
+				FD3A30612C46174000E7E93E /* Sources */,
+				FD3A30622C46174000E7E93E /* Frameworks */,
+				FD3A30632C46174000E7E93E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodablePropertyWrapper;
+			productName = CodablePropertyWrapper;
+			productReference = FD3A30652C46174000E7E93E /* CodablePropertyWrapper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD3A30752C46174100E7E93E /* CodablePropertyWrapperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD3A308D2C46174100E7E93E /* Build configuration list for PBXNativeTarget "CodablePropertyWrapperTests" */;
+			buildPhases = (
+				FD3A30722C46174100E7E93E /* Sources */,
+				FD3A30732C46174100E7E93E /* Frameworks */,
+				FD3A30742C46174100E7E93E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD3A30782C46174100E7E93E /* PBXTargetDependency */,
+			);
+			name = CodablePropertyWrapperTests;
+			productName = CodablePropertyWrapperTests;
+			productReference = FD3A30762C46174100E7E93E /* CodablePropertyWrapperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD3A307F2C46174100E7E93E /* CodablePropertyWrapperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD3A30902C46174100E7E93E /* Build configuration list for PBXNativeTarget "CodablePropertyWrapperUITests" */;
+			buildPhases = (
+				FD3A307C2C46174100E7E93E /* Sources */,
+				FD3A307D2C46174100E7E93E /* Frameworks */,
+				FD3A307E2C46174100E7E93E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD3A30822C46174100E7E93E /* PBXTargetDependency */,
+			);
+			name = CodablePropertyWrapperUITests;
+			productName = CodablePropertyWrapperUITests;
+			productReference = FD3A30802C46174100E7E93E /* CodablePropertyWrapperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD3A305D2C46173F00E7E93E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					FD3A30642C46174000E7E93E = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					FD3A30752C46174100E7E93E = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = FD3A30642C46174000E7E93E;
+					};
+					FD3A307F2C46174100E7E93E = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = FD3A30642C46174000E7E93E;
+					};
+				};
+			};
+			buildConfigurationList = FD3A30602C46173F00E7E93E /* Build configuration list for PBXProject "CodablePropertyWrapper" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD3A305C2C46173F00E7E93E;
+			productRefGroup = FD3A30662C46174000E7E93E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD3A30642C46174000E7E93E /* CodablePropertyWrapper */,
+				FD3A30752C46174100E7E93E /* CodablePropertyWrapperTests */,
+				FD3A307F2C46174100E7E93E /* CodablePropertyWrapperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD3A30632C46174000E7E93E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD3A30702C46174100E7E93E /* Preview Assets.xcassets in Resources */,
+				FD3A306D2C46174100E7E93E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3A30742C46174100E7E93E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3A307E2C46174100E7E93E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD3A30612C46174000E7E93E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD3A30972C461E8100E7E93E /* TestStruct.swift in Sources */,
+				FD3A306B2C46174000E7E93E /* ContentView.swift in Sources */,
+				FD3A30692C46174000E7E93E /* CodablePropertyWrapperApp.swift in Sources */,
+				FD3A30952C46177C00E7E93E /* Codable+Ex.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3A30722C46174100E7E93E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD3A307B2C46174100E7E93E /* CodablePropertyWrapperTests.swift in Sources */,
+				FD3A30992C461F8400E7E93E /* Codable+Ex.swift in Sources */,
+				FD3A309A2C461F8A00E7E93E /* TestStruct.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD3A307C2C46174100E7E93E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD3A30872C46174100E7E93E /* CodablePropertyWrapperUITestsLaunchTests.swift in Sources */,
+				FD3A30852C46174100E7E93E /* CodablePropertyWrapperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD3A30782C46174100E7E93E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD3A30642C46174000E7E93E /* CodablePropertyWrapper */;
+			targetProxy = FD3A30772C46174100E7E93E /* PBXContainerItemProxy */;
+		};
+		FD3A30822C46174100E7E93E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD3A30642C46174000E7E93E /* CodablePropertyWrapper */;
+			targetProxy = FD3A30812C46174100E7E93E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FD3A30882C46174100E7E93E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FD3A30892C46174100E7E93E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		FD3A308B2C46174100E7E93E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CodablePropertyWrapper/CodablePropertyWrapper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CodablePropertyWrapper/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wb.CodablePropertyWrapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FD3A308C2C46174100E7E93E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CodablePropertyWrapper/CodablePropertyWrapper.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"CodablePropertyWrapper/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wb.CodablePropertyWrapper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		FD3A308E2C46174100E7E93E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wb.CodablePropertyWrapperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodablePropertyWrapper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CodablePropertyWrapper";
+			};
+			name = Debug;
+		};
+		FD3A308F2C46174100E7E93E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wb.CodablePropertyWrapperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodablePropertyWrapper.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CodablePropertyWrapper";
+			};
+			name = Release;
+		};
+		FD3A30912C46174100E7E93E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wb.CodablePropertyWrapperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = CodablePropertyWrapper;
+			};
+			name = Debug;
+		};
+		FD3A30922C46174100E7E93E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wb.CodablePropertyWrapperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = CodablePropertyWrapper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD3A30602C46173F00E7E93E /* Build configuration list for PBXProject "CodablePropertyWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD3A30882C46174100E7E93E /* Debug */,
+				FD3A30892C46174100E7E93E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD3A308A2C46174100E7E93E /* Build configuration list for PBXNativeTarget "CodablePropertyWrapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD3A308B2C46174100E7E93E /* Debug */,
+				FD3A308C2C46174100E7E93E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD3A308D2C46174100E7E93E /* Build configuration list for PBXNativeTarget "CodablePropertyWrapperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD3A308E2C46174100E7E93E /* Debug */,
+				FD3A308F2C46174100E7E93E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD3A30902C46174100E7E93E /* Build configuration list for PBXNativeTarget "CodablePropertyWrapperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD3A30912C46174100E7E93E /* Debug */,
+				FD3A30922C46174100E7E93E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD3A305D2C46173F00E7E93E /* Project object */;
+}
