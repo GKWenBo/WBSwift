@@ -167,4 +167,17 @@ window?.rootView = view
 view = nil
 window = nil
 
+
+func listAllSystemFonts() {
+    let fonts = UIFont.familyNames
+    for familyName in fonts {
+        print("Font Family: \(familyName)")
+        let fontNames = UIFont.fontNames(forFamilyName: familyName)
+        for fontName in fontNames {
+            print("  \(fontName)")
+        }
+    }
+}
+
+listAllSystemFonts()
 //: [Next](@next)
